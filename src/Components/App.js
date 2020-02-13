@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import "./App.css";
+import GlobalStyles from "../Styles/GlobalStyles";
 
 const Test = styled.p`
   font-size: 14px;
@@ -10,9 +10,12 @@ const Test = styled.p`
 
 function App() {
   return (
-    <div className="App">
-      <Test>Hello, World</Test>
-    </div>
+    <>
+      <GlobalStyles />
+      <div className="App">
+        <Test>Hello, World</Test>
+      </div>
+    </>
   );
 }
 
