@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import GlobalStyles from "../Styles/GlobalStyles";
+import { HashRouter as Router } from "react-router-dom";
+import Routes from "./Routes";
 
 const Test = styled.p`
   font-size: 14px;
@@ -12,9 +14,11 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <div className="App">
-        <Test>Hello, World</Test>
-      </div>
+      <Router>
+        <div>
+          <Routes />
+        </div>
+      </Router>
     </>
   );
 }
