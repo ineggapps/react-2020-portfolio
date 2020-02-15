@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
-import { PAGE_PORTFOLIO, PAGE_ABOUT } from "./Routes";
+import { PAGE_PORTFOLIO, PAGE_ABOUT, PAGE_MAIN } from "./Routes";
 
 const Menu = styled.ul`
   font-family: "Roboto";
@@ -13,9 +13,6 @@ const Menu = styled.ul`
     font-weight: bold;
     font-size: 2em;
     display: inline-block;
-    &:not(:last-child) {
-      margin-right: 1em;
-    }
   }
 
   li.on a {
@@ -23,16 +20,28 @@ const Menu = styled.ul`
   }
 `;
 
-const Gnb = withRouter(({ location }) => {
+const Item = styled.li`
+  font-weight: bold;
+  font-size: 2em;
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 1em;
+  }
+  & a {
+    color: ${props => (props.current ? props.theme.blueColor : props.theme.linkColor)};
+  }
+`;
+
+const Gnb = withRouter(({ location: { pathname } }) => {
   return (
     <div>
       <Menu>
-        <li className={location === PAGE_ABOUT ? "on" : ""}>
+        <Item current={pathname === PAGE_ABOUT || pathname === PAGE_MAIN}>
           <Link to={PAGE_ABOUT}>About</Link>
-        </li>
-        <li>
+        </Item>
+        <Item current={pathname === PAGE_PORTFOLIO}>
           <Link to={PAGE_PORTFOLIO}>Portfolio</Link>
-        </li>
+        </Item>
       </Menu>
     </div>
   );
