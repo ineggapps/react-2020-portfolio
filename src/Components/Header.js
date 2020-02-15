@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Gnb from "./Gnb";
 
-const HeaderWrapper = styled.div`
-  background-color: azure;
-`;
+const SQUARE = "180px";
 
 const ProfileWrapper = styled.div`
   margin-top: 50px;
@@ -14,7 +12,7 @@ const ProfileWrapper = styled.div`
 `;
 
 const Profile = styled.div`
-  width: 200px;
+  width: ${SQUARE};
 
   div {
     width: 100%;
@@ -22,20 +20,28 @@ const Profile = styled.div`
 `;
 
 const Image = styled.div`
-  height: 200px;
+  height: ${SQUARE};
   background: url(${props => props.url}) 50% 50% transparent;
   border-radius: 100%;
 `;
 
-const Name = styled.div``;
+const Name = styled.div`
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  margin: 10px 0;
+`;
 
 const Title = styled(Name)``;
 
 const Header = () => (
-  <HeaderWrapper>
+  <>
     <ProfileWrapper>
       <Profile>
-        <Image url="https://cdn.pixabay.com/photo/2016/05/09/10/42/weimaraner-1381186_1280.jpg"></Image>
+        <Image url="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_1280.jpg"></Image>
         <Name>
           <h1>Hojoong Choi</h1>
         </Name>
@@ -43,7 +49,7 @@ const Header = () => (
       </Profile>
     </ProfileWrapper>
     <Gnb />
-  </HeaderWrapper>
+  </>
 );
 
 export default Header;

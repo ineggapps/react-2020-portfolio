@@ -6,9 +6,21 @@ import Routes from "./Routes";
 import Header from "./Header";
 import Theme from "../Styles/Theme";
 
-const Wrapper = styled.div`
+const Container = styled.div`
   width: 100%;
+  & > div {
+    width: 100%;
+    @media screen and (min-width: 992px) {
+      width: 80%;
+      margin: 0 auto;
+      transition: ease all 0.2s;
+    }
+  }
 `;
+
+const HeaderWrapper = styled.div``;
+
+const ContentWrapper = styled.div``;
 
 function App() {
   return (
@@ -16,10 +28,14 @@ function App() {
       <ThemeProvider theme={Theme}>
         <GlobalStyles />
         <Router>
-          <Wrapper>
-            <Header />
-            <Routes />
-          </Wrapper>
+          <Container>
+            <HeaderWrapper>
+              <Header />
+            </HeaderWrapper>
+            <ContentWrapper>
+              <Routes />
+            </ContentWrapper>
+          </Container>
         </Router>
       </ThemeProvider>
     </>
