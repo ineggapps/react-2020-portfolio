@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
+import { PAGE_PORTFOLIO, PAGE_ABOUT } from "./Routes";
 
 const Menu = styled.ul`
   font-family: "Roboto";
@@ -16,19 +17,25 @@ const Menu = styled.ul`
       margin-right: 1em;
     }
   }
+
+  li.on a {
+    color: ${props => props.theme.blueColor};
+  }
 `;
 
-const Gnb = () => (
-  <div>
-    <Menu>
-      <li>
-        <Link to={"/introduce"}>Introduce</Link>
-      </li>
-      <li>
-        <Link to={"/portfolio"}>Portfolio</Link>
-      </li>
-    </Menu>
-  </div>
-);
+const Gnb = withRouter(({ location }) => {
+  return (
+    <div>
+      <Menu>
+        <li className={location === PAGE_ABOUT ? "on" : ""}>
+          <Link to={PAGE_ABOUT}>About</Link>
+        </li>
+        <li>
+          <Link to={PAGE_PORTFOLIO}>Portfolio</Link>
+        </li>
+      </Menu>
+    </div>
+  );
+});
 
 export default Gnb;

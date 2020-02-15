@@ -5,10 +5,10 @@ import Gnb from "./Gnb";
 const SQUARE = "180px";
 
 const ProfileWrapper = styled.div`
-  margin-top: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 `;
 
 const Profile = styled.div`
@@ -29,10 +29,11 @@ const Name = styled.div`
   display: flex;
   justify-content: center;
   h1 {
-    font-size: 1.3em;
+    text-align: center;
+    font-size: 1.2em;
     font-weight: bold;
   }
-  margin: 10px 0;
+  margin: 5px 0;
 `;
 
 const Title = styled(Name)``;

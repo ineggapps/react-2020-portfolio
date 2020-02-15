@@ -18,7 +18,9 @@ const Container = styled.div`
   }
 `;
 
-const HeaderWrapper = styled.div``;
+const HeaderWrapper = styled.div`
+  padding: 50px 0;
+`;
 
 const ContentWrapper = styled.div``;
 

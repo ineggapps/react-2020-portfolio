@@ -1,15 +1,17 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Intro from "../Routes/Intro";
+import About from "../Routes/About";
 import Portfolio from "../Routes/Portfolio";
 
 //
-export const PAGE_INTRO = "/introduce";
+export const PAGE_MAIN = "/";
+export const PAGE_ABOUT = "/about";
 export const PAGE_PORTFOLIO = "/portfolio";
 
 const NormalRoutes = () => (
   <Switch>
-    <Route path={PAGE_INTRO} component={Intro} />
+    <Route exact path={PAGE_MAIN} component={About} />
+    <Route path={PAGE_ABOUT} component={About} />
     <Route path={PAGE_PORTFOLIO} component={Portfolio} />
   </Switch>
 );
