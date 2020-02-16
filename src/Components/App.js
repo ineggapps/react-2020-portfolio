@@ -7,14 +7,15 @@ import Header from "./Header";
 import Theme from "../Styles/Theme";
 
 const Container = styled.div`
-  padding: 50px 0;
   width: 100%;
   & > div {
     width: 100%;
+    padding: 20px 20px;
     @media screen and (min-width: ${props => props.theme.responsivePC}) {
+      /* PC버전 */
+      padding: 20px 0;
       width: 80%;
       margin: 0 auto;
-      padding: 0;
       ${props => props.theme.transition};
     }
   }
