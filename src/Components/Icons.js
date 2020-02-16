@@ -1,5 +1,41 @@
 import React from "react";
 
+export const Logo = () => (
+  <svg
+    version="1.2"
+    baseProfile="tiny"
+    xmlns="http://www.w3.org/2000/svg"
+    x="0px"
+    y="0px"
+    viewBox="0 0 792 612"
+  >
+    <g id="Layer_1">
+      <g>
+        <polygon
+          fill="#01579B"
+          points="123.4,155.2 123.4,457.5 385.2,608.7 647.1,457.5 647.1,155.2 385.2,4 		"
+        />
+        <polygon
+          fill="#FFFFFF"
+          points="551.2,129 386.5,224.1 292.3,169.8 457.1,74.7 386.5,33.9 221.7,129 151.1,169.8 221.7,210.6 
+			315.9,264.9 386.5,305.7 457.1,264.9 621.8,169.8 		"
+        />
+        <g>
+          <polygon fill="#FFFFFF" points="377.6,483.5 151.1,352.8 151.1,276.7 377.6,407.4 			" />
+          <polygon fill="#FFFFFF" points="377.6,572.3 309.6,533.1 309.6,279.4 377.6,318.7 			" />
+          <polygon fill="#FFFFFF" points="219.1,480.8 151.1,441.5 151.1,187.9 219.1,227.1 			" />
+        </g>
+        <g>
+          <polygon fill="#FFFFFF" points="621.8,441.5 395.5,572.1 395.5,496.1 621.8,365.5 			" />
+          <polygon fill="#FFFFFF" points="621.8,441.5 553.9,480.7 553.9,227.2 621.8,188.1 			" />
+          <polygon fill="#FFFFFF" points="463.4,532.9 395.5,572.1 395.5,445.4 463.4,406.2 			" />
+        </g>
+      </g>
+    </g>
+    <g id="Layer_2"></g>
+  </svg>
+);
+
 export const Html5 = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
     <title>HTML5 Logo</title>

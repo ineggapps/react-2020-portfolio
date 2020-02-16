@@ -2,6 +2,19 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
 import { PAGE_PORTFOLIO, PAGE_ABOUT, PAGE_MAIN } from "./Routes";
+import { Logo } from "./Icons";
+
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  h1 {
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+    margin-right: 20px;
+  }
+`;
 
 const Menu = styled.ul`
   font-family: "Roboto";
@@ -11,7 +24,7 @@ const Menu = styled.ul`
   align-items: center;
   li {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
     display: inline-block;
   }
 
@@ -34,7 +47,10 @@ const Item = styled.li`
 
 const Gnb = withRouter(({ location: { pathname } }) => {
   return (
-    <div>
+    <Container>
+      <h1>
+        <Logo></Logo>
+      </h1>
       <Menu>
         <Item current={pathname === PAGE_ABOUT || pathname === PAGE_MAIN}>
           <Link to={PAGE_ABOUT}>About</Link>
@@ -43,7 +59,7 @@ const Gnb = withRouter(({ location: { pathname } }) => {
           <Link to={PAGE_PORTFOLIO}>Portfolio</Link>
         </Item>
       </Menu>
-    </div>
+    </Container>
   );
 });
 

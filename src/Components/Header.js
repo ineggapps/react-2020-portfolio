@@ -28,7 +28,7 @@ const Image = styled.div`
 const Name = styled.div`
   display: flex;
   justify-content: center;
-  h1 {
+  h2 {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
@@ -40,16 +40,16 @@ const Title = styled(Name)``;
 
 const Header = () => (
   <>
+    <Gnb />
     <ProfileWrapper>
       <Profile>
         <Image url="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_1280.jpg"></Image>
         <Name>
-          <h1>Hojoong Choi</h1>
+          <h2>Hojoong Choi</h2>
         </Name>
         <Title>Web Developer</Title>
       </Profile>
     </ProfileWrapper>
-    <Gnb />
   </>
 );
 
