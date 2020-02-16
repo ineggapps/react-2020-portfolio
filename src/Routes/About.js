@@ -2,8 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Html5, Css3, Javascript, ReactLogo } from "../Components/Icons";
 
-const Content = styled.div`
+const Content = styled.div``;
+
+const Intro = styled.div`
+  h3 {
+    font-family: "Noto Sans KR";
+    font-weight: 900;
+  }
   p {
+    font-family: "Noto Serif KR";
     width: 100%;
     width: 100%;
     text-indent: 1.4em;
@@ -15,8 +22,6 @@ const Content = styled.div`
     }
   }
 `;
-
-const Intro = styled.div``;
 
 const Skills = styled.ul`
   display: flex;
@@ -84,6 +89,7 @@ const About = () => {
   return (
     <Content>
       <Intro>
+        <h3>About ME</h3>
         <p>
           열락의 인생을 눈이 힘차게 내려온 튼튼하며, 원질이 길을 날카로우나 보라. 이상을 청춘의
           그림자는 위하여서, 끝까지 미인을 실현에 평화스러운 내려온 교향악이다. 튼튼하며, 청춘이

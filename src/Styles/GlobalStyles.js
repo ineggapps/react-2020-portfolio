@@ -14,7 +14,7 @@ export default createGlobalStyle`
         box-sizing:border-box;
     }
     body{
-        font-family:-apple-system, 'Open Sans', Roboto,'Noto Serif KR', BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+        font-family:-apple-system,BlinkMacSystemFont, 'Open Sans', Roboto,'Noto Sans KR', 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
         font-size:1.4em;
         line-height:1.4em;
         color:${props => props.theme.blackColor};
