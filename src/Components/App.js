@@ -7,13 +7,15 @@ import Header from "./Header";
 import Theme from "../Styles/Theme";
 
 const Container = styled.div`
+  padding: 50px 0;
   width: 100%;
   & > div {
     width: 100%;
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: ${props => props.theme.responsivePC}) {
       width: 80%;
       margin: 0 auto;
-      transition: ease all 0.2s;
+      padding: 0;
+      ${props => props.theme.transition};
     }
   }
 `;

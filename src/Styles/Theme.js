@@ -2,6 +2,8 @@ const BOX_BORDER = "1px solid #e6e6e6";
 const BORDER_RADIUS = "4px";
 
 export default {
+  responsivePC: "960px",
+  responsiveTablet: "768px",
   linkColor: "#114B5F",
   maxWidth: "935px",
   bgColor: "#FAFAFA",
@@ -15,5 +17,6 @@ export default {
   borderRadius: "4px",
   whiteBox: `border:${BOX_BORDER};
                     border-radius:${BORDER_RADIUS};
-                    background-color:white;`
+                    background-color:white;`,
+  transition: "transition: ease all 0.2s;"
 };
