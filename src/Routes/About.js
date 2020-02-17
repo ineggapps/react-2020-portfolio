@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Html5, Css3, Javascript, ReactLogo } from "../Components/Icons";
+import { skills } from "../Data/About";
 
 const Content = styled.div``;
 
@@ -24,56 +24,29 @@ const Intro = styled.div`
 `;
 
 const Skills = styled.ul`
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  li {
-    display: flex;
-    justify-content: center;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
   li:not(:last-child) {
-    margin-right: 3%;
+    margin-bottom: 30px;
   }
   @media screen and (max-width: ${props => props.theme.responsivePC}) {
-    justify-content: center;
-    flex-flow: column;
-    li:not(:last-child) {
-      margin-bottom: 60px;
-    }
+    grid-template-columns: repeat(1, 1fr);
     ${props => props.theme.transition};
   }
 `;
 
-const Skill = styled.li``;
+const Skill = styled.li`
+  align-self: flex-start;
+  justify-self: center;
+`;
 
-const skills = [
-  {
-    title: "React",
-    img: <ReactLogo></ReactLogo>,
-    content: "요즘 핫한 리액트"
-  },
-  {
-    title: "html5",
-    img: <Html5></Html5>,
-    content: "웹사이트를 마크업"
-  },
-  {
-    title: "css3",
-    img: <Css3></Css3>,
-    content: "웹사이트를 스타일링"
-  },
-  {
-    title: "Javascript",
-    img: <Javascript />,
-    content: "웹사이트를 생생하게"
-  }
-];
-
+// JSX 때문에 json 저장이 어려움...
 const SkillBox = styled.div`
   width: 200px;
   height: 300px;
-  border-radius: 10px;
-  box-shadow: 0 8px 38px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133, 0.22);
+  border-radius: 5px;
+  box-shadow: 0 8px 38px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133, 0.1);
 
   display: flex;
   justify-content: center;
@@ -114,8 +87,8 @@ const About = () => {
         </p>
       </Intro>
       <Skills>
-        {skills.map(s => (
-          <Skill>
+        {skills.map((s, idx) => (
+          <Skill key={idx}>
             <SkillBox>
               <p>{s.img}</p>
               <p>{s.title.toLocaleUpperCase()}</p>
