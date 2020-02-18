@@ -15,8 +15,8 @@ export default createGlobalStyle`
     }
     body{
         font-family:-apple-system,BlinkMacSystemFont, 'Open Sans', Roboto,'Noto Sans KR', 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-        font-size:1.4em;
-        line-height:1.4em;
+        font-size:1.3em;
+        line-height:1.3em;
         color:${props => props.theme.blackColor};
     }
     a{
