@@ -2,6 +2,8 @@ const BOX_BORDER = "1px solid #e6e6e6";
 const BORDER_RADIUS = "4px";
 
 export default {
+  headerWidth: "280px;",
+  theme1Color: "#3B7EEB",
   responsivePC: "960px",
   responsiveTablet: "768px",
   linkColor: "#114B5F",

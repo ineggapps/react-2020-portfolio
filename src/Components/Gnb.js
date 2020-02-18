@@ -6,6 +6,8 @@ import { Logo } from "./Icons";
 
 const Container = styled.div`
   display: flex;
+  justify-content: space-around;
+
   width: 100%;
   h1 {
     svg {
@@ -34,16 +36,16 @@ const Menu = styled.ul`
 `;
 
 const Item = styled.li`
-  font-weight: bold;
-  font-size: 2em;
-  display: inline-block;
   &:not(:last-child) {
-    margin-right: 1em;
+    margin-bottom: 1em;
   }
-  & a {
-    color: ${props => (props.current ? props.theme.blueColor : props.theme.linkColor)};
+  &.on {
+    a {
+    }
   }
 `;
+
+const classOn = "on";
 
 const Gnb = withRouter(({ location: { pathname } }) => {
   return (
@@ -52,10 +54,10 @@ const Gnb = withRouter(({ location: { pathname } }) => {
         <Logo></Logo>
       </h1>
       <Menu>
-        <Item current={pathname === PAGE_ABOUT || pathname === PAGE_MAIN}>
+        <Item className={pathname === PAGE_ABOUT || pathname === PAGE_MAIN ? classOn : ""}>
           <Link to={PAGE_ABOUT}>About</Link>
         </Item>
-        <Item current={pathname === PAGE_PORTFOLIO}>
+        <Item className={pathname === PAGE_PORTFOLIO ? classOn : ""}>
           <Link to={PAGE_PORTFOLIO}>Portfolio</Link>
         </Item>
       </Menu>

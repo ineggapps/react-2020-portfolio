@@ -10,22 +10,18 @@ const Container = styled.div`
   width: 100%;
   & > div {
     width: 100%;
-    padding: 20px 20px;
     @media screen and (min-width: ${props => props.theme.responsivePC}) {
       /* PC버전 */
-      padding: 20px 0;
-      width: 80%;
-      margin: 0 auto;
       ${props => props.theme.transition};
     }
   }
 `;
 
-const HeaderWrapper = styled.div`
-  padding: 50px 0;
-`;
+const HeaderWrapper = styled.div``;
 
-const ContentWrapper = styled.div``;
+const ContentWrapper = styled.div`
+  padding-left: ${props => props.theme.headerWidth};
+`;
 
 function App() {
   return (
