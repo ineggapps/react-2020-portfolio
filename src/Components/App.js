@@ -10,17 +10,33 @@ const Container = styled.div`
   width: 100%;
   & > div {
     width: 100%;
-    @media screen and (min-width: ${props => props.theme.responsivePC}) {
-      /* PC버전 */
-      ${props => props.theme.transition};
+  }
+`;
+
+const HeaderWrapper = styled.div`
+  ${props => props.theme.transition};
+  @media screen and (max-width: ${props => props.theme.responsivePC}) {
+    header {
+      width: 100%;
+      height: auto;
+      position: unset;
+      display: block;
+      padding-bottom: 20px;
     }
   }
 `;
 
-const HeaderWrapper = styled.div``;
-
 const ContentWrapper = styled.div`
+  ${props => props.theme.transition};
   padding-left: ${props => props.theme.headerWidth};
+  @media screen and (max-width: ${props => props.theme.responsivePC}) {
+    padding-left: 0;
+    padding-top: 20px;
+
+    nav {
+      display: none;
+    }
+  }
 `;
 
 function App() {

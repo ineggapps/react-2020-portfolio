@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Gnb from "./Gnb";
+import { GithubIcon, EmailIcon } from "./Icons";
 
 const Container = styled.header`
   position: fixed;
@@ -56,6 +57,27 @@ const Bio = styled.div`
   line-height: 1.25em;
 `;
 
+const Contacts = styled.ul`
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+  }
+  border-bottom: 1px solid #3979e2;
+`;
+
+const Contact = styled.li`
+  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-right: 13px;
+  }
+`;
+
 const Header = () => (
   <Container>
     <ProfileWrapper>
@@ -63,11 +85,25 @@ const Header = () => (
         <Name>
           <h2>Hojoong Choi</h2>
         </Name>
-        <Image url="https://cdn.pixabay.com/photo/2017/11/23/07/47/babe-2972221__480.jpg"></Image>
-        <Bio>
-          Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-          industries for previewing layouts and visual mockups.
-        </Bio>
+        <nav>
+          <Image url="https://cdn.pixabay.com/photo/2017/11/23/07/47/babe-2972221__480.jpg"></Image>
+          <Bio>
+            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+            industries for previewing layouts and visual mockups.
+          </Bio>
+          <Contacts>
+            <Contact>
+              <a href="https://github.com/ineggapps" target="_blank">
+                <GithubIcon />
+              </a>
+            </Contact>
+            <Contact>
+              <a href="#" target="_blank">
+                <EmailIcon />
+              </a>
+            </Contact>
+          </Contacts>
+        </nav>
       </Profile>
     </ProfileWrapper>
     <Gnb />

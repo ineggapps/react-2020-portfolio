@@ -4,7 +4,7 @@ const BORDER_RADIUS = "4px";
 export default {
   headerWidth: "280px;",
   theme1Color: "#3B7EEB",
-  responsivePC: "960px",
+  responsivePC: "990px",
   responsiveTablet: "768px",
   linkColor: "#114B5F",
   maxWidth: "935px",
