@@ -7,6 +7,8 @@ import Portfolio from "../Routes/Portfolio";
 export const PAGE_MAIN = "/";
 export const PAGE_ABOUT = "/about";
 export const PAGE_PORTFOLIO = "/portfolio";
+export const PAGE_RESUME = "/resume";
+export const PAGE_CONTACT = "/contact";
 
 const NormalRoutes = () => (
   <Switch>

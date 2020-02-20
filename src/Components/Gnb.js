@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
-import { PAGE_PORTFOLIO, PAGE_ABOUT, PAGE_MAIN } from "./Routes";
-import { Logo, ProfileIcon, ComputerIcon } from "./Icons";
+import { PAGE_PORTFOLIO, PAGE_ABOUT, PAGE_MAIN, PAGE_RESUME, PAGE_CONTACT } from "./Routes";
+import { Logo, ProfileIcon, ComputerIcon, PaperIcon, EnvelopeIcon } from "./Icons";
 
 const Container = styled.div`
   width: 100%;
@@ -55,6 +55,16 @@ const Gnb = withRouter(({ location: { pathname } }) => {
         <Item className={pathname === PAGE_PORTFOLIO ? classOn : ""}>
           <Link to={PAGE_PORTFOLIO}>
             <ComputerIcon /> Portfolio
+          </Link>
+        </Item>
+        <Item className={pathname === PAGE_RESUME ? classOn : ""}>
+          <Link to="#">
+            <PaperIcon /> Resume
+          </Link>
+        </Item>
+        <Item className={pathname === PAGE_CONTACT ? classOn : ""}>
+          <Link to="#">
+            <EnvelopeIcon /> Contact
           </Link>
         </Item>
       </Menu>
