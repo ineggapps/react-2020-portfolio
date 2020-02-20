@@ -6,8 +6,7 @@ import { Logo, ProfileIcon, ComputerIcon, PaperIcon, EnvelopeIcon } from "./Icon
 
 const Container = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: space-around;
+  margin-left: 20%;
 `;
 
 const Menu = styled.ul`
