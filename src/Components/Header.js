@@ -39,7 +39,7 @@ const Image = styled.div`
 const Name = styled.div`
   display: flex;
   justify-content: center;
-  h2 {
+  h1 {
     color: white;
     text-align: center;
     font-weight: 900;
@@ -85,7 +85,7 @@ const Header = () => (
     <ProfileWrapper>
       <Profile>
         <Name>
-          <h2>Hojoong Choi</h2>
+          <h1>Hojoong Choi</h1>
         </Name>
         <nav>
           <Image url="https://cdn.pixabay.com/photo/2017/11/23/07/47/babe-2972221__480.jpg"></Image>

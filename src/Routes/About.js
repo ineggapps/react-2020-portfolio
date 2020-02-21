@@ -13,7 +13,7 @@ const Content = styled.div`
 
 const Intro = styled.section`
   width: 70%;
-  h3 {
+  h2 {
     font-weight: 900;
     font-size: 2em;
   }
@@ -80,7 +80,7 @@ const About = () => {
   return (
     <Content bgColor="#FAFAFA">
       <Intro>
-        <h3>Hojoong Choi</h3>
+        <h2>Hojoong Choi</h2>
         <SubTitle>Junior Developer</SubTitle>
         <p>
           꽃 대중을 가슴에 것은 말이다. 속잎나고, 고동을 열락의 이상의 착목한는 길을 끓는
