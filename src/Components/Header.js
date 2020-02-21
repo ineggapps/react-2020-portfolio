@@ -40,8 +40,10 @@ const Name = styled.div`
   display: flex;
   justify-content: center;
   h2 {
+    color: white;
     text-align: center;
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 1.2em;
     letter-spacing: -0.05em;
   }
   margin: 30px 0;

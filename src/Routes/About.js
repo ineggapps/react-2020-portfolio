@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import { skills } from "../Data/About";
+import { Button } from "antd";
+import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
 const Content = styled.div`
   display: flex;
   flex-flow: row;
   padding: 5% 8%;
+  background-color: ${props => props.bgColor};
 `;
 
 const Intro = styled.section`
   width: 70%;
   h3 {
-    font-family: "Noto Sans KR";
     font-weight: 900;
     font-size: 2em;
   }
@@ -76,7 +78,7 @@ const SkillBox = styled.div`
 
 const About = () => {
   return (
-    <Content>
+    <Content bgColor="#FAFAFA">
       <Intro>
         <h3>Hojoong Choi</h3>
         <SubTitle>Junior Developer</SubTitle>
@@ -84,6 +86,11 @@ const About = () => {
           인생에 동력은 크고 속잎나고, 운다. 아름답고 없으면 모래뿐일 황금시대의 용감하고 기쁘며,
           사랑의 그들은 있는가? 밥을 자신과 있는 쓸쓸하랴? 피고, 대한 인생을 그들의 청춘
           이것이야말로 우리 이것이다.
+        </p>
+        <p>
+          <Button type="primary" icon="caret-right">
+            View Portfolio
+          </Button>
         </p>
       </Intro>
       <ProfilePic>

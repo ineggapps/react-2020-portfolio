@@ -10,8 +10,6 @@ const Container = styled.div`
 `;
 
 const Menu = styled.ul`
-  font-family: "Roboto";
-
   li {
     font-weight: bold;
     font-size: 1em;
