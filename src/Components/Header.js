@@ -42,7 +42,6 @@ const Name = styled.div`
   h1 {
     color: white;
     text-align: center;
-    font-weight: 900;
     font-size: 1.2em;
     letter-spacing: -0.05em;
   }

@@ -19,6 +19,10 @@ export default createGlobalStyle`
         line-height:1.3em;
         color:${props => props.theme.blackColor};
     }
+    h1, h2{
+        font-weight:900;   
+        font-size: 2em;
+    }
     a{
         text-decoration:none;
         color:${props => props.theme.linkColor};
