@@ -89,8 +89,8 @@ const Header = () => (
         <nav>
           <Image url="https://cdn.pixabay.com/photo/2017/11/23/07/47/babe-2972221__480.jpg"></Image>
           <Bio>
-            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-            industries for previewing layouts and visual mockups.
+            구하기 인간은 있는 듣는다. 방황하여도, 피가 곳으로 구하지 풍부하게 투명하되 사막이다.
+            커다란 간에 끝까지 무엇을 때에, 관현악이며, 피가 자신과 미묘한 듣는다.
           </Bio>
           <Contacts>
             <Contact>

@@ -6,17 +6,25 @@ import { Logo, ProfileIcon, ComputerIcon, PaperIcon, EnvelopeIcon } from "./Icon
 
 const Container = styled.div`
   width: 100%;
-  margin-left: 20%;
+  padding-left: 22%;
+  @media screen and (max-width: ${props => props.theme.responsivePC}) {
+    padding-left: 5%;
+  }
+  ${props => props.theme.transition}
 `;
 
 const Menu = styled.ul`
   li {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
+    min-height: 40px;
     a {
       color: #fff;
     }
     svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
       fill: #fff;
     }
   }
@@ -46,7 +54,7 @@ const Gnb = withRouter(({ location: { pathname } }) => {
       <Menu>
         <Item className={pathname === PAGE_ABOUT || pathname === PAGE_MAIN ? classOn : ""}>
           <Link to={PAGE_ABOUT}>
-            <ProfileIcon /> About
+            <ProfileIcon /> About Me
           </Link>
         </Item>
         <Item className={pathname === PAGE_PORTFOLIO ? classOn : ""}>

@@ -5,9 +5,27 @@ import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
 const Content = styled.div`
+  @media screen and (max-width: 1200px) {
+    flex-flow: column;
+    section {
+      width: 100% !important;
+      p {
+        padding-right: 0 !important;
+      }
+    }
+  }
+  section {
+    width: 70%;
+    p {
+      padding-right: 10%;
+    }
+  }
   display: flex;
   flex-flow: row;
-  padding: 5% 8%;
+  padding: 4% 8%;
+  &.skills {
+    padding: 0 8%;
+  }
   background-color: ${props => props.bgColor};
   p {
     width: 100%;
@@ -19,12 +37,7 @@ const Content = styled.div`
   }
 `;
 
-const Intro = styled.section`
-  width: 70%;
-  p {
-    padding-right: 10%;
-  }
-`;
+const Intro = styled.section``;
 
 const ProfilePic = styled.div`
   width: 30%;
@@ -32,6 +45,10 @@ const ProfilePic = styled.div`
   img {
     width: 100%;
     height: 100%;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-top: 20px;
+    width: 70%;
   }
 `;
 
@@ -51,14 +68,16 @@ const SkillOverview = styled.div`
 `;
 
 const Skills = styled.ul`
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 4%;
 
   li:not(:last-child) {
     margin-bottom: 30px;
   }
   @media screen and (max-width: ${props => props.theme.responsivePC}) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     ${props => props.theme.transition};
   }
 `;
@@ -66,24 +85,21 @@ const Skills = styled.ul`
 const Skill = styled.li`
   align-self: flex-start;
   justify-self: center;
+  p {
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+    &:nth-child(2) {
+      font-weight: bold;
+    }
+    &:nth-child(3) {
+    }
+  }
 `;
 
 // JSX 때문에 json 저장이 어려움...
-const SkillBox = styled.div`
-  width: 200px;
-  height: 300px;
-  border-radius: 5px;
-  box-shadow: 0 8px 38px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133, 0.1);
-
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  svg,
-  img {
-    width: 80px;
-    height: 80px;
-  }
-`;
+const SkillBox = styled.div``;
 
 const About = () => {
   return (
@@ -123,7 +139,9 @@ const About = () => {
             산야에 날카로우나 뭇 무엇을 운다. 석가는 쓸쓸한 것이 아니다.
           </p>
         </SkillOverview>
-        {/* <Skills>
+      </Content>
+      <Content className="skills">
+        <Skills>
           {skills.map((s, idx) => (
             <Skill key={idx}>
               <SkillBox>
@@ -133,7 +151,7 @@ const About = () => {
               </SkillBox>
             </Skill>
           ))}
-        </Skills> */}
+        </Skills>
       </Content>
     </>
   );
