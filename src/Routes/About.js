@@ -15,7 +15,7 @@ const Content = styled.div`
     }
   }
   section {
-    width: 70%;
+    width: 60%;
     p {
       padding-right: 10%;
     }
@@ -40,7 +40,7 @@ const Content = styled.div`
 const Intro = styled.section``;
 
 const ProfilePic = styled.div`
-  width: 30%;
+  width: 40%;
   height: auto;
   img {
     width: 100%;
