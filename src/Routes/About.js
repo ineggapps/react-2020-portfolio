@@ -55,7 +55,7 @@ const SubTitle = styled.div`
   margin-top: 20px;
 `;
 
-const SkillOverview = styled.div`
+const SkillOverview = styled.section`
   h2 {
     font-size: 1.5em;
     border-left: 4px solid ${props => props.theme.theme1Color};
@@ -98,7 +98,7 @@ const Skill = styled.li`
 `;
 
 // JSX 때문에 json 저장이 어려움...
-const SkillBox = styled.div``;
+const SkillBox = styled.section``;
 
 const About = () => {
   return (
