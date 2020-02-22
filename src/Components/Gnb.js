@@ -62,11 +62,11 @@ const Gnb = withRouter(({ location: { pathname } }) => {
             <ComputerIcon /> Portfolio
           </Link>
         </Item>
-        <Item className={pathname === PAGE_RESUME ? classOn : ""}>
+        {/* <Item className={pathname === PAGE_RESUME ? classOn : ""}>
           <Link to="#">
             <PaperIcon /> Resume
           </Link>
-        </Item>
+        </Item> */}
         <Item className={pathname === PAGE_CONTACT ? classOn : ""}>
           <Link to="#">
             <EnvelopeIcon /> Contact
