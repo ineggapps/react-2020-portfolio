@@ -39,6 +39,7 @@ const Content = styled.div`
 const Intro = styled.section`
   text-align: center;
   p {
+    font-size: 0.8em;
     padding: 0 10% !important;
     @media screen and (max-width: 1200px) {
       padding: 0 !important;
@@ -52,6 +53,9 @@ const Projects = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2%;
+  @media screen and (max-width: 1380px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const Project = styled.li`
@@ -65,18 +69,28 @@ const Box = styled.div`
   border: 1px solid #f0f0f0;
   display: flex;
   flex-flow: row;
+  h4 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: ${props => props.theme.darkGreyColor};
+    text-
+  }
+  p {
+    font-size: 0.8em;
+  }
 `;
 
 const Thumbnail = styled.div`
   background: url(${props => props.src}) transparent center center no-repeat;
   min-width: 200px;
-  max-height: 200px;
+  min-height: 200px;
   overflow: hidden;
 `;
 
 const OverView = styled.div`
   display: flex;
   flex-flow: column;
+  padding: 2%;
 `;
 
 const Portfolio = () => {
@@ -104,7 +118,7 @@ const Portfolio = () => {
             <Box>
               <Thumbnail src="https://cdn.pixabay.com/photo/2014/08/05/10/30/iphone-410324__480.jpg"></Thumbnail>
               <OverView>
-                <div>프로젝트 제목1</div>
+                <h4>프로젝트 제목1</h4>
                 <p>
                   사랑의 더운지라 꾸며 대한 무한한 가치를 이상은 지혜는 교향악이다. 어디 투명하되
                   싸인 창공에 기쁘며, 용기가 작고 황금시대다. 청춘의 품에 같이 기쁘며, 고동을 것은
@@ -117,7 +131,7 @@ const Portfolio = () => {
             <Box>
               <Thumbnail src="https://cdn.pixabay.com/photo/2014/08/05/10/30/iphone-410324__480.jpg"></Thumbnail>
               <OverView>
-                <div>프로젝트 제목1</div>
+                <h4>프로젝트 제목1</h4>
                 <p>
                   사랑의 더운지라 꾸며 대한 무한한 가치를 이상은 지혜는 교향악이다. 어디 투명하되
                   싸인 창공에 기쁘며, 용기가 작고 황금시대다. 청춘의 품에 같이 기쁘며, 고동을 것은
@@ -130,7 +144,7 @@ const Portfolio = () => {
             <Box>
               <Thumbnail src="https://cdn.pixabay.com/photo/2014/08/05/10/30/iphone-410324__480.jpg"></Thumbnail>
               <OverView>
-                <div>프로젝트 제목1</div>
+                <h4>프로젝트 제목1</h4>
                 <p>
                   사랑의 더운지라 꾸며 대한 무한한 가치를 이상은 지혜는 교향악이다. 어디 투명하되
                   싸인 창공에 기쁘며, 용기가 작고 황금시대다. 청춘의 품에 같이 기쁘며, 고동을 것은
@@ -143,7 +157,7 @@ const Portfolio = () => {
             <Box>
               <Thumbnail src="https://cdn.pixabay.com/photo/2014/08/05/10/30/iphone-410324__480.jpg"></Thumbnail>
               <OverView>
-                <div>프로젝트 제목1</div>
+                <h4>프로젝트 제목1</h4>
                 <p>
                   사랑의 더운지라 꾸며 대한 무한한 가치를 이상은 지혜는 교향악이다. 어디 투명하되
                   싸인 창공에 기쁘며, 용기가 작고 황금시대다. 청춘의 품에 같이 기쁘며, 고동을 것은
