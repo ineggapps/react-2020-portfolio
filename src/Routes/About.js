@@ -72,9 +72,6 @@ const Skills = styled.ul`
   grid-template-columns: repeat(4, 1fr);
   column-gap: 4%;
 
-  li:not(:last-child) {
-    margin-bottom: 30px;
-  }
   @media screen and (max-width: ${props => props.theme.responsivePC}) {
     grid-template-columns: repeat(2, 1fr);
     ${props => props.theme.transition};
@@ -82,6 +79,9 @@ const Skills = styled.ul`
 `;
 
 const Skill = styled.li`
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   align-self: flex-start;
   justify-self: center;
   p {
@@ -98,7 +98,7 @@ const Skill = styled.li`
 `;
 
 // JSX 때문에 json 저장이 어려움...
-const SkillBox = styled.section``;
+const SkillBox = styled.div``;
 
 const About = () => {
   return (
