@@ -46,52 +46,40 @@ const Intro = styled.section`
   }
 `;
 
-const SkillOverview = styled.section`
-  h2 {
-    font-size: 1.5em;
-    border-left: 4px solid ${props => props.theme.theme1Color};
-    padding-left: 18px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-  }
+const Projects = styled.ul`
+  width: 100%;
+  padding: 4%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2%;
 `;
 
-const Skills = styled.ul`
+const Project = styled.li`
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 4%;
-
-  li:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
-  @media screen and (max-width: ${props => props.theme.responsivePC}) {
-    grid-template-columns: repeat(2, 1fr);
-    ${props => props.theme.transition};
-  }
 `;
 
-const Skill = styled.li`
-  align-self: flex-start;
-  justify-self: center;
-  p {
-    svg {
-      width: 50px;
-      height: 50px;
-    }
-    &:nth-child(2) {
-      font-weight: bold;
-    }
-    &:nth-child(3) {
-    }
-  }
+const Box = styled.div`
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-flow: row;
 `;
 
-// JSX 때문에 json 저장이 어려움...
-const SkillBox = styled.div``;
+const Thumbnail = styled.div`
+  background: url(${props => props.src}) transparent center center no-repeat;
+  min-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+`;
 
-const About = () => {
+const OverView = styled.div`
+  display: flex;
+  flex-flow: column;
+`;
+
+const Portfolio = () => {
   return (
     <>
       <Content bgColor="#FAFAFA">
@@ -110,9 +98,64 @@ const About = () => {
           </p>
         </Intro>
       </Content>
-      <Content></Content>
+      <Content>
+        <Projects>
+          <Project>
+            <Box>
+              <Thumbnail src="https://cdn.pixabay.com/photo/2014/08/05/10/30/iphone-410324__480.jpg"></Thumbnail>
+              <OverView>
+                <div>프로젝트 제목1</div>
+                <p>
+                  사랑의 더운지라 꾸며 대한 무한한 가치를 이상은 지혜는 교향악이다. 어디 투명하되
+                  싸인 창공에 기쁘며, 용기가 작고 황금시대다. 청춘의 품에 같이 기쁘며, 고동을 것은
+                  반짝이는 같이, 것이다. 황금시대의 것은 할지라도 천자만홍이 만천하의 뿐이다.
+                </p>
+              </OverView>
+            </Box>
+          </Project>
+          <Project>
+            <Box>
+              <Thumbnail src="https://cdn.pixabay.com/photo/2014/08/05/10/30/iphone-410324__480.jpg"></Thumbnail>
+              <OverView>
+                <div>프로젝트 제목1</div>
+                <p>
+                  사랑의 더운지라 꾸며 대한 무한한 가치를 이상은 지혜는 교향악이다. 어디 투명하되
+                  싸인 창공에 기쁘며, 용기가 작고 황금시대다. 청춘의 품에 같이 기쁘며, 고동을 것은
+                  반짝이는 같이, 것이다. 황금시대의 것은 할지라도 천자만홍이 만천하의 뿐이다.
+                </p>
+              </OverView>
+            </Box>
+          </Project>
+          <Project>
+            <Box>
+              <Thumbnail src="https://cdn.pixabay.com/photo/2014/08/05/10/30/iphone-410324__480.jpg"></Thumbnail>
+              <OverView>
+                <div>프로젝트 제목1</div>
+                <p>
+                  사랑의 더운지라 꾸며 대한 무한한 가치를 이상은 지혜는 교향악이다. 어디 투명하되
+                  싸인 창공에 기쁘며, 용기가 작고 황금시대다. 청춘의 품에 같이 기쁘며, 고동을 것은
+                  반짝이는 같이, 것이다. 황금시대의 것은 할지라도 천자만홍이 만천하의 뿐이다.
+                </p>
+              </OverView>
+            </Box>
+          </Project>
+          <Project>
+            <Box>
+              <Thumbnail src="https://cdn.pixabay.com/photo/2014/08/05/10/30/iphone-410324__480.jpg"></Thumbnail>
+              <OverView>
+                <div>프로젝트 제목1</div>
+                <p>
+                  사랑의 더운지라 꾸며 대한 무한한 가치를 이상은 지혜는 교향악이다. 어디 투명하되
+                  싸인 창공에 기쁘며, 용기가 작고 황금시대다. 청춘의 품에 같이 기쁘며, 고동을 것은
+                  반짝이는 같이, 것이다. 황금시대의 것은 할지라도 천자만홍이 만천하의 뿐이다.
+                </p>
+              </OverView>
+            </Box>
+          </Project>
+        </Projects>
+      </Content>
     </>
   );
 };
 
-export default About;
+export default Portfolio;
