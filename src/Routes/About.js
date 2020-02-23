@@ -47,7 +47,7 @@ const ProfilePic = styled.div`
   }
   @media screen and (max-width: 1200px) {
     margin-top: 20px;
-    width: 70%;
+    min-width: 70%;
   }
 `;
 

@@ -40,6 +40,9 @@ const Intro = styled.section`
   text-align: center;
   p {
     padding: 0 10% !important;
+    @media screen and (max-width: 1200px) {
+      padding: 0 !important;
+    }
   }
 `;
 
