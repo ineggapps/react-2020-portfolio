@@ -89,7 +89,7 @@ const Portfolio = () => {
         <Projects>
           {works.map(w => (
             <Project>
-              <WorkBox img={w.img} title={w.title} description={w.description} />
+              <WorkBox id={w.id} img={w.img} title={w.title} description={w.description} />
             </Project>
           ))}
         </Projects>

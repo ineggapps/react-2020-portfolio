@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { Button } from "antd";
+import { Link } from "react-router-dom";
+import { PAGE_DETAIL } from "./Routes";
 
 const Box = styled.div`
   border: 1px solid #f0f0f0;
@@ -56,11 +58,13 @@ const TopComponent = styled(Overlay)`
   align-items: center;
 `;
 
-const WorkBox = ({ img, title, description }) => (
+const WorkBox = ({ id, img, title, description }) => (
   <Wrapper>
     <Overlay></Overlay>
     <TopComponent>
-      <Button>Default</Button>
+      <Link to={`${PAGE_DETAIL}/${id}`}>
+        <Button>View Detail</Button>
+      </Link>
     </TopComponent>
     <Box>
       <Thumbnail src={img}></Thumbnail>
