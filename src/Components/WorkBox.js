@@ -3,7 +3,7 @@ import styled from "styled-components";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { Button } from "antd";
 import { Link } from "react-router-dom";
-import { PAGE_DETAIL } from "./Routes";
+import { PAGE_PORTFOLIO } from "./Routes";
 
 const Box = styled.div`
   border: 1px solid #f0f0f0;
@@ -62,7 +62,7 @@ const WorkBox = ({ id, img, title, description }) => (
   <Wrapper>
     <Overlay></Overlay>
     <TopComponent>
-      <Link to={`${PAGE_DETAIL}/${id}`}>
+      <Link to={`${PAGE_PORTFOLIO}/${id}`}>
         <Button>View Detail</Button>
       </Link>
     </TopComponent>

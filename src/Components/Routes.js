@@ -8,7 +8,6 @@ import Detail from "../Routes/Detail";
 export const PAGE_MAIN = "/";
 export const PAGE_ABOUT = "/about";
 export const PAGE_PORTFOLIO = "/portfolio";
-export const PAGE_DETAIL = "/detail";
 const detail_param = "/:id";
 
 export const PAGE_RESUME = "/resume";
@@ -18,8 +17,8 @@ const NormalRoutes = () => (
   <Switch>
     <Route exact path={PAGE_MAIN} component={About} />
     <Route path={PAGE_ABOUT} component={About} />
+    <Route path={PAGE_PORTFOLIO + detail_param} component={Detail} />
     <Route path={PAGE_PORTFOLIO} component={Portfolio} />
-    <Route path={PAGE_DETAIL + detail_param} component={Detail} />
   </Switch>
 );
 const Routes = () => (

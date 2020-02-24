@@ -9,13 +9,13 @@ const Content = styled.div`
   @media screen and (max-width: 1200px) {
     flex-flow: column;
     section {
-      width: 100% !important;
       p {
         padding-right: 0 !important;
       }
     }
   }
   section {
+    width: 100%;
     p {
       padding-right: 10%;
     }
