@@ -110,7 +110,7 @@ export const ReactLogo = () => (
     x="0px"
     y="0px"
     viewBox="0 0 841.9 595.3"
-    enable-background="new 0 0 841.9 595.3"
+    enableBackground="new 0 0 841.9 595.3"
   >
     <g>
       <path
