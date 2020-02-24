@@ -1,3 +1,7 @@
 import React from "react";
 
-export default () => "Detail";
+export default ({
+  match: {
+    params: { id }
+  }
+}) => `Detail ${id}`;
