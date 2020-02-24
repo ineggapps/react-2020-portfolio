@@ -19,6 +19,7 @@ const Box = styled.div`
     text-
   }
   p {
+    width:100%;
     font-size: 0.8em;
   }
 `;

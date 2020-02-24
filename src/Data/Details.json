@@ -2,11 +2,22 @@
   {
     "id": "farmpet2",
     "title": "Farmpet2",
-    "subtitle": "farmpet2 프로젝트입니다."
+    "subtitle": "farmpet2 Project."
   },
   {
     "id": "farmpet",
     "title": "Farmpet",
-    "subtitle": "farmpet php 프로젝트입니다."
+    "subtitle": "farmpet php Project"
+  },
+
+  {
+    "id": "nomflix",
+    "title": "Nomflix",
+    "subtitle": "Nomflix React Project"
+  },
+  {
+    "id": "inbody",
+    "title": "Inbody",
+    "subtitle": "Inbody php Project"
   }
 ]
