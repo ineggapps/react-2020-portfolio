@@ -116,6 +116,7 @@ const Overview = styled.section`
   }
   p {
     text-indent: 1em;
+    letter-spacing: -0.02em;
   }
 
   &:not(:last-child) {
@@ -178,7 +179,11 @@ const Detail = ({
           detail.overviews.map(o => (
             <Overview>
               <h2>{o.section}</h2>
-              {o.content && o.content.map(content => <p>{content}</p>)}
+              {o.content && o.content.isArray ? (
+                o.content.map(content => <p>{content}</p>)
+              ) : (
+                <p>{o.content}</p>
+              )}
             </Overview>
           ))}
       </Content>
