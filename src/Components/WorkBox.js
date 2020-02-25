@@ -31,10 +31,11 @@ const Thumbnail = styled.div`
   overflow: hidden;
 `;
 
-const OverView = styled.div`
+const Overview = styled.div`
   display: flex;
   flex-flow: column;
   padding: 2%;
+  width: 100%;
 `;
 
 const Wrapper = styled.div`
@@ -69,10 +70,10 @@ const WorkBox = ({ id, img, title, description }) => (
     </TopComponent>
     <Box>
       <Thumbnail src={img}></Thumbnail>
-      <OverView>
+      <Overview>
         <h4>{title}</h4>
         <p>{description}</p>
-      </OverView>
+      </Overview>
     </Box>
   </Wrapper>
 );
