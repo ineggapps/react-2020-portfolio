@@ -7,6 +7,9 @@ import { PAGE_PORTFOLIO } from "../Components/Routes.js";
 import { LinkIcon, Disk } from "../Components/Icons.js";
 
 const Content = styled.div`
+  &.flex-flow-column {
+    flex-flow: column;
+  }
   @media screen and (max-width: 1200px) {
     flex-flow: column;
     section {
@@ -111,6 +114,10 @@ const Overview = styled.section`
     display: flex;
     align-items: center;
   }
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
 `;
 
 const Detail = ({
@@ -163,17 +170,14 @@ const Detail = ({
           </SynopsisBox>
         </Synopsis>
       </Content>
-      <Content>
-        <Overview>
-          <h2>Project 훑어보기</h2>
-          <p>
-            힘차게 그러므로 눈이 같으며, 전인 착목한는 아름다우냐? 날카로우나 그들을 같이, 말이다.
-            대한 부패를 가치를 든 가치를 천자만홍이 사막이다. 위하여, 것은 너의 많이 능히 있는
-            구하지 힘있다. 그들은 온갖 구할 피가 별과 인간의 것이다. 영원히 찾아 불어 능히 무엇이
-            실로 보는 눈이 것이다. 이상의 피에 사람은 사라지지 소담스러운 것이다. 굳세게 봄바람을
-            산야에 날카로우나 뭇 무엇을 운다. 석가는 쓸쓸한 것이 아니다.
-          </p>
-        </Overview>
+      <Content className="flex-flow-column">
+        {detail.contents &&
+          detail.contents.map(c => (
+            <Overview>
+              <h2>{c.section}</h2>
+              <p>{c.content}</p>
+            </Overview>
+          ))}
       </Content>
     </>
   );
