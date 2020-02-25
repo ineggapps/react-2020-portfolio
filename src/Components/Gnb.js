@@ -68,9 +68,12 @@ const Gnb = withRouter(({ location: { pathname } }) => {
           </Link>
         </Item> */}
         <Item className={pathname === PAGE_CONTACT ? classOn : ""}>
-          <Link to="#">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScZRR1pw_Ha3gXgHbhUHpn5x5CVCgeMSNbCHipFtXxupCfWUQ/viewform?usp=sf_link"
+            target="_blank"
+          >
             <EnvelopeIcon /> Contact
-          </Link>
+          </a>
         </Item>
       </Menu>
     </Container>

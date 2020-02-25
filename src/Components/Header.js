@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Gnb from "./Gnb";
 import { GithubIcon, EmailIcon } from "./Icons";
+import { PAGE_ABOUT } from "./Routes";
+import { Link } from "react-router-dom";
 
 const Container = styled.header`
   position: fixed;
@@ -84,7 +86,9 @@ const Header = () => (
     <ProfileWrapper>
       <Profile>
         <Name>
-          <h1>Hojoong Choi</h1>
+          <Link to={PAGE_ABOUT}>
+            <h1>Hojoong Choi</h1>
+          </Link>
         </Name>
         <nav>
           <Image url="https://cdn.pixabay.com/photo/2017/11/23/07/47/babe-2972221__480.jpg"></Image>
