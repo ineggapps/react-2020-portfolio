@@ -4,6 +4,7 @@ import details from "../Data/Details.json";
 import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { PAGE_PORTFOLIO } from "../Components/Routes.js";
+import { LinkIcon, Disk } from "../Components/Icons.js";
 
 const Content = styled.div`
   @media screen and (max-width: 1200px) {
@@ -45,6 +46,63 @@ const Intro = styled.section`
   }
 `;
 
+const Synopsis = styled.div`
+  display: flex;
+  flex-flow: row;
+  @media screen and (max-width: 600px) {
+    flex-flow: column;
+  }
+  width: 100%;
+  border: 2px solid #f4f4f4;
+  background-color: #fafafa;
+  padding: 2%;
+`;
+
+const SquareThumbnail = styled.div`
+  min-width: 300px;
+  height: 400px;
+  margin-right: 5%;
+  @media screen and (max-width: 600px) {
+    margin: 0 0 2.5%;
+  }
+  background: url("https://cdn.pixabay.com/photo/2020/02/15/04/19/chicken-4849979__480.jpg") center
+    center transparent;
+  border-radius: 1.4%;
+`;
+
+const SynopsisBox = styled.div`
+  width: fit-content;
+  & *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    fill: #4f4f4f;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 20px !important;
+  }
+  h4 {
+    font-weight: 700;
+  }
+  li {
+    font-size: 0.8em;
+    p {
+      font-size: 0.9em;
+    }
+    ul {
+      margin-left: 2em;
+      list-style-type: disc;
+      font-size: 1.2em;
+      line-height: 1em;
+    }
+  }
+`;
+
 const Overview = styled.section`
   h2 {
     font-weight: 700;
@@ -78,6 +136,32 @@ const Detail = ({
             </Button>
           </p>
         </Intro>
+      </Content>
+      <Content>
+        <Synopsis>
+          <SquareThumbnail />
+          <SynopsisBox>
+            <h3>작품명</h3>
+            <ul>
+              <li>
+                <LinkIcon />
+                farmpet2.inegg.com
+              </li>
+              <li>
+                <Disk />
+                작품명세서 확인
+              </li>
+              <li>
+                <h4>작품 소개</h4>
+                <p>{detail.synopsis ? detail.synopsis : "준비 중입니다."}</p>
+              </li>
+              <li>
+                <h4>프로젝트 요구사항</h4>
+                <ul>{detail.requirements && detail.requirements.map(r => <li>{r}</li>)}</ul>
+              </li>
+            </ul>
+          </SynopsisBox>
+        </Synopsis>
       </Content>
       <Content>
         <Overview>
