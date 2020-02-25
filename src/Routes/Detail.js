@@ -114,6 +114,9 @@ const Overview = styled.section`
     display: flex;
     align-items: center;
   }
+  p {
+    text-indent: 1em;
+  }
 
   &:not(:last-child) {
     margin-bottom: 50px;
@@ -171,11 +174,11 @@ const Detail = ({
         </Synopsis>
       </Content>
       <Content className="flex-flow-column">
-        {detail.contents &&
-          detail.contents.map(c => (
+        {detail.overviews &&
+          detail.overviews.map(o => (
             <Overview>
-              <h2>{c.section}</h2>
-              <p>{c.content}</p>
+              <h2>{o.section}</h2>
+              {o.content && o.content.map(content => <p>{content}</p>)}
             </Overview>
           ))}
       </Content>

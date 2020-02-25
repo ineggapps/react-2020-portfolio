@@ -5,14 +5,25 @@
     "subtitle": "farmpet2 Project.",
     "synopsis": "React Hook 등 그동안 백엔드와 프런트엔드 배운 내용을 바탕으로 하여 학부 시절에 만들어 보았던 반려동물 SNS사이트인 Farmpet을 리팩토링하게 되었습니다. 카카오스토리와 인스타그램을 믹싱하여 새로운 사이트를 탄생시켰습니다. ",
     "requirements": ["Node.js", "GraphQL", "Prisma", "React with Hooks"],
-    "contents": [
+    "overviews": [
       {
         "section": "Projects 훑어보기",
-        "content": "Farmpet 사이트는 반려동물의 일상을 사진으로 공유하는 사이트로 제작하였습니다. SNS 사이트의 공유하는 피드나 담벼락을 직접 구현했습니다. "
+        "content": [
+          "Farmpet 사이트는 반려동물의 일상을 사진으로 공유하는 사이트로 제작하였습니다. SNS 사이트의 공유하는 피드나 담벼락을 직접 구현했습니다. "
+        ]
       },
       {
         "section": "Front-end",
-        "content": "React Hooks을 배운 내용으로 하여 직접 front-end단을 구현해보았습니다. 이미지 슬라이더는 React hooks의 context를 이용하여 작성해 보았고, useState를 이용하여 기본적인 컴포넌트의 상태 관리를 시도해 보았습니다. 백엔드 단의 데이터는 graphQL을 이용하여 가져오게 되는데, 이는 react-apollo-hooks의 useQuery와 useMutation을 이용하여 데이터의 조회, 입출력을 제어합니다."
+        "content": [
+          "React Hooks을 배운 내용으로 하여 직접 front-end단을 구현해보았습니다. 이미지 슬라이더는 React hooks의 context를 이용하여 작성해 보았습니다",
+          "front-end단에서는 React를 적용한 서버를 가동시켰고, back-end단을 통하여 데이터를 접근하기 위해서는 restAPI를 별도로 설계하지 않고 graphQL을 이용하여 데이터를 불러오고 입출력을 진행하도록 시도해 보았습니다. "
+        ]
+      },
+      {
+        "section": "Back-end",
+        "content": [
+          "Prisma ORM을 이용하여 전용 데이터베이스의 SQL언어에 구애받지 않고 데이터의 입출력을 구현하였습니다. 이는 graphQL을 사용하기에 최적화된 플랫폼으로서 둘을 모두 사용하기에 궁합이 좋습니다. 기존의 Rest API의 좋은 방식이 있지만 facebook에서 새롭게 개발한 기술을 사용하여 좀 더 최신 방법으로 SNS사이트를 구현해보고자 하였습니다."
+        ]
       }
     ]
   },
