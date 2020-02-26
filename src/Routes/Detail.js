@@ -79,8 +79,8 @@ const SynopsisBox = styled.div`
     margin-bottom: 10px;
   }
   svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     margin-right: 10px;
     fill: #4f4f4f;
   }
@@ -154,12 +154,16 @@ const Detail = ({
         <Synopsis>
           <SquareThumbnail />
           <SynopsisBox>
-            <h3>작품명</h3>
+            <h3>{detail.title}</h3>
             <ul>
-              <li>
-                <LinkIcon />
-                farmpet2.inegg.com
-              </li>
+              {detail.link && (
+                <li>
+                  <a href={detail.link} target="_blank">
+                    <LinkIcon />
+                    {detail.link}
+                  </a>
+                </li>
+              )}
               <li>
                 <Disk />
                 작품명세서 확인
