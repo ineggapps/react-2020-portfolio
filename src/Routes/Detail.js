@@ -198,8 +198,8 @@ const Detail = ({
           detail.overviews.map(o => (
             <Overview>
               <h2>{o.section}</h2>
-              {o.content && o.content.isArray ? (
-                o.content.map(content => <p>{content}</p>)
+              {o.content && o.content.length > 0 ? (
+                o.content.map(content => <p>ㄴ{content}ㄴ</p>)
               ) : (
                 <p>{o.content}</p>
               )}
