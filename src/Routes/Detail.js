@@ -156,25 +156,37 @@ const Detail = ({
           <SynopsisBox>
             <h3>{detail.title}</h3>
             <ul>
-              {detail.link && (
+              {detail.synopsis && detail.synopsis.link && (
                 <li>
-                  <a href={detail.link} target="_blank">
+                  <a href={detail.synopsis.link} target="_blank">
                     <LinkIcon />
-                    {detail.link}
+                    {detail.synopsis.link}
+                  </a>
+                </li>
+              )}
+              {detail.synopsis && detail.synopsis.document && (
+                <li>
+                  <a href={detail.synopsis.document} target="_blank">
+                    <Disk />
+                    View document
                   </a>
                 </li>
               )}
               <li>
-                <Disk />
-                작품명세서 확인
-              </li>
-              <li>
                 <h4>작품 소개</h4>
-                <p>{detail.synopsis ? detail.synopsis : "준비 중입니다."}</p>
+                <p>
+                  {detail.synopsis && detail.synopsis.description
+                    ? detail.synopsis.description
+                    : "준비 중입니다."}
+                </p>
               </li>
               <li>
                 <h4>프로젝트 요구사항</h4>
-                <ul>{detail.requirements && detail.requirements.map(r => <li>{r}</li>)}</ul>
+                <ul>
+                  {detail.synopsis &&
+                    detail.synopsis.requirements &&
+                    detail.synopsis.requirements.map(r => <li>{r}</li>)}
+                </ul>
               </li>
             </ul>
           </SynopsisBox>
