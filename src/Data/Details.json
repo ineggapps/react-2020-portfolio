@@ -57,8 +57,11 @@
     "title": "Nomflix",
     "subtitle": "Nomflix React Project",
     "synopsis": {
-      "thumbnail": "https://cdn.pixabay.com/photo/2019/06/29/04/00/fisherman-4305368__480.jpg"
-    }
+      "thumbnail": "https://cdn.pixabay.com/photo/2019/06/29/04/00/fisherman-4305368__480.jpg",
+      "description": "백엔드를 공부하기 위해 youtube사이트를 클론하여 동영상을 업로드하는 Wetube사이트를 클론하였습니다. Passport.js의 OAuth를 이용하여 github 계정이나 facebook 계정으로 로그인할 수 있도록 하였으며 로그인 시에 동영상 업로드가 가능합니다.",
+      "requirements": ["React"]
+    },
+    "overviews": [{ "section": "Project 훑어보기", "content": ["본 프로젝트는 작성되었습니다."] }]
   },
   {
     "id": "wetube",
@@ -67,9 +70,14 @@
     "synopsis": {
       "thumbnail": "https://cdn.pixabay.com/photo/2017/03/13/17/25/clapper-2140602__480.jpg",
       "description": "알람",
-      "requirements": ["Android"]
+      "requirements": ["Node.js", "PUG"]
     },
-    "overviews": [{ "section": "Project 훑어보기", "content": ["본 프로젝트는 작성되었습니다."] }]
+    "overviews": [
+      {
+        "section": "그 밖에 더 새로운 것들",
+        "content": "이전에는 관계형 데이터베이스인 MariaDB(MySQL)이나 Oracle을 공부하면서 쿼리를 입력하는 방법에 대해서 배웠습니다. 데이터베이스의 종류에는 많은 종류들이 있지만 데이터베이스가 곧 관계형데이터베이스라는 고정관념을 깨게 된 계기였습니다. NOSQL인 MongoDB를 이용하여 json형식으로도 데이터베이스에 자료를 담고 좀 더 빠르고 편하게 접근하여 저장된 데이터를 열람하거나 저장, 삭제할 수 있다는 것들을 익혀볼 수 있는 귀한 계기가 되었습니다. "
+      }
+    ]
   },
   {
     "id": "inbody",
