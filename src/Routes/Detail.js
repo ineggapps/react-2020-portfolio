@@ -68,8 +68,7 @@ const SquareThumbnail = styled.div`
   @media screen and (max-width: 600px) {
     margin: 0 0 2.5%;
   }
-  background: url("https://cdn.pixabay.com/photo/2020/02/15/04/19/chicken-4849979__480.jpg") center
-    center transparent;
+  background: url(${props => props.src}) center center transparent;
   border-radius: 1.4%;
 `;
 
@@ -152,7 +151,9 @@ const Detail = ({
       </Content>
       <Content>
         <Synopsis>
-          <SquareThumbnail />
+          <SquareThumbnail
+            src={detail.synopsis && detail.synopsis.thumbnail ? detail.synopsis.thumbnail : ""}
+          />
           <SynopsisBox>
             <h3>{detail.title}</h3>
             <ul>
