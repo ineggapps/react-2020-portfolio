@@ -18,7 +18,7 @@ const Content = styled.div`
       }
     }
   }
-  section {
+  &:first-child > section {
     width: 100%;
     p {
       padding-right: 10%;
