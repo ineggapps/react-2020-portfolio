@@ -9,6 +9,8 @@ export const PAGE_MAIN = "/";
 export const PAGE_ABOUT = "/about";
 export const PAGE_PORTFOLIO = "/portfolio";
 const detail_param = "/:id";
+export const LINK_CONTACT =
+  "https://docs.google.com/forms/d/e/1FAIpQLScZRR1pw_Ha3gXgHbhUHpn5x5CVCgeMSNbCHipFtXxupCfWUQ/viewform?usp=sf_link";
 
 export const PAGE_RESUME = "/resume";
 export const PAGE_CONTACT = "/contact";

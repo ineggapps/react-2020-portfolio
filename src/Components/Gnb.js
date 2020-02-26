@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
-import { PAGE_PORTFOLIO, PAGE_ABOUT, PAGE_MAIN, PAGE_RESUME, PAGE_CONTACT } from "./Routes";
+import { PAGE_PORTFOLIO, PAGE_ABOUT, PAGE_MAIN, PAGE_CONTACT, LINK_CONTACT } from "./Routes";
 import { Logo, ProfileIcon, ComputerIcon, PaperIcon, EnvelopeIcon } from "./Icons";
 
 const Container = styled.div`
@@ -68,10 +68,7 @@ const Gnb = withRouter(({ location: { pathname } }) => {
           </Link>
         </Item> */}
         <Item className={pathname === PAGE_CONTACT ? classOn : ""}>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScZRR1pw_Ha3gXgHbhUHpn5x5CVCgeMSNbCHipFtXxupCfWUQ/viewform?usp=sf_link"
-            target="_blank"
-          >
+          <a href={LINK_CONTACT} target="_blank">
             <EnvelopeIcon /> Contact
           </a>
         </Item>

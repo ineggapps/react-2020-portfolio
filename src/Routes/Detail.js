@@ -3,7 +3,7 @@ import styled from "styled-components";
 import details from "../Data/Details.json";
 import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
-import { PAGE_PORTFOLIO } from "../Components/Routes.js";
+import { PAGE_PORTFOLIO, LINK_CONTACT } from "../Components/Routes.js";
 import { LinkIcon, Disk } from "../Components/Icons.js";
 
 const Content = styled.div`
@@ -142,9 +142,11 @@ const Detail = ({
           <h2>{detail.title}</h2>
           <p>{detail.subtitle}</p>
           <p>
-            <Button type="primary" icon="caret-right">
-              Contact Me
-            </Button>
+            <a href={LINK_CONTACT} target="_blank">
+              <Button type="primary" icon="caret-right">
+                Contact Me
+              </Button>
+            </a>
           </p>
         </Intro>
       </Content>
