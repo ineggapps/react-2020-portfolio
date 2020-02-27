@@ -186,7 +186,7 @@ const Detail = ({
                 <ul>
                   {detail.synopsis &&
                     detail.synopsis.requirements &&
-                    detail.synopsis.requirements.map(r => <li>{r}</li>)}
+                    detail.synopsis.requirements.map((r, idx) => <li key={idx}>{r}</li>)}
                 </ul>
               </li>
             </ul>
@@ -195,11 +195,11 @@ const Detail = ({
       </Content>
       <Content className="flex-flow-column">
         {detail.overviews &&
-          detail.overviews.map(o => (
-            <Overview>
+          detail.overviews.map((o, idx) => (
+            <Overview key={idx}>
               <h2>{o.section}</h2>
               {o.content && o.content.map ? (
-                o.content.map(content => <p>{content}</p>)
+                o.content.map((content, idx) => <p key={idx}>{content}</p>)
               ) : (
                 <p>{o.content}</p>
               )}
