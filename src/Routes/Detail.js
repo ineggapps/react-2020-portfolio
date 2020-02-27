@@ -199,7 +199,7 @@ const Detail = ({
             <Overview>
               <h2>{o.section}</h2>
               {o.content && o.content.length > 0 ? (
-                o.content.map(content => <p>ㄴ{content}ㄴ</p>)
+                o.content.map(content => <p>{content}</p>)
               ) : (
                 <p>{o.content}</p>
               )}
