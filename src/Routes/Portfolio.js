@@ -4,6 +4,7 @@ import works from "../Data/Works.json";
 import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import WorkBox from "../Components/WorkBox.js";
+import { LINK_CONTACT } from "../Components/Routes.js";
 
 const Content = styled.div`
   @media screen and (max-width: 1200px) {
@@ -79,9 +80,11 @@ const Portfolio = () => {
             뿐이다.
           </p>
           <p>
-            <Button type="primary" icon="caret-right">
-              Contact Me
-            </Button>
+            <a href={LINK_CONTACT} target="_blank">
+              <Button type="primary" icon="caret-right">
+                Contact Me
+              </Button>
+            </a>
           </p>
         </Intro>
       </Content>
