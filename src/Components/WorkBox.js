@@ -14,7 +14,7 @@ const Box = styled.div`
   }
   h4 {
     font-weight: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-color: ${props => props.theme.darkGreyColor};
     text-
   }
