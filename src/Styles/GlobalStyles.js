@@ -16,7 +16,7 @@ export default createGlobalStyle`
     body{
         font-family:'Noto Sans KR', -apple-system,BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
         font-size:1.3em;
-        line-height:1.3em;
+        line-height:1.5em;
         color:${props => props.theme.blackColor};
     }
     h1, h2{
