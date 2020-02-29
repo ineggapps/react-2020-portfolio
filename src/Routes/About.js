@@ -58,6 +58,9 @@ const Intro = styled.section`
     text-indent: 1em;
     line-height: 1.4em;
   }
+  p.button {
+    margin: 10px 0 15px;
+  }
 `;
 
 const ProfilePic = styled.div`
@@ -150,7 +153,7 @@ const About = () => {
             빠른 기술 발전 속도에 따라 수시로 바뀌는 트렌드에 적응하고자 노력해 온 것처럼, 자기
             주도적으로 일하며 전도유망한 개발자로 꾸준히 성장해 나갈 것입니다.
           </p>
-          <p>
+          <p className="button">
             <Link to={PAGE_PORTFOLIO}>
               <Button type="primary" icon="caret-right">
                 View Portfolio
