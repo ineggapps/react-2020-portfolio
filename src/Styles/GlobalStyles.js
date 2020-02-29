@@ -9,12 +9,12 @@ export default createGlobalStyle`
     ${reset};
     /* Google fonts */
     /* cyrillic-ext */
-    ${fonts};
+    /* ${fonts}; */
     *{
         box-sizing:border-box;
     }
     body{
-        font-family:-apple-system,BlinkMacSystemFont,  Roboto, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+        font-family:'Noto Sans KR', -apple-system,BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
         font-size:1.3em;
         line-height:1.3em;
         color:${props => props.theme.blackColor};
