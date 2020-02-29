@@ -2,7 +2,7 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
 import { PAGE_PORTFOLIO, PAGE_ABOUT, PAGE_MAIN, PAGE_CONTACT, LINK_CONTACT } from "./Routes";
-import { Logo, ProfileIcon, ComputerIcon, PaperIcon, EnvelopeIcon } from "./Icons";
+import { ProfileIcon, ComputerIcon, EnvelopeIcon } from "./Icons";
 
 const Container = styled.div`
   width: 100%;
