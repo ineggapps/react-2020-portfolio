@@ -64,6 +64,10 @@ const Name = styled.div`
     text-align: center;
     font-size: 1.2em;
     letter-spacing: -0.05em;
+    img {
+      width: 43px;
+      height: 50px;
+    }
   }
   margin: 30px 0;
 `;
@@ -105,7 +109,9 @@ const Header = () => (
       <Profile>
         <Name>
           <Link to={PAGE_ABOUT}>
-            <h1>Hojoong Choi</h1>
+            <h1>
+              <img src="https://i.ibb.co/wLWfgNK/profile-logo-white.png" alt="Hojoong Choi" />
+            </h1>
           </Link>
         </Name>
         <nav>
