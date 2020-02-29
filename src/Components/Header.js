@@ -30,12 +30,30 @@ const Profile = styled.div`
   width: 100%;
 `;
 
-const Image = styled.div`
+const ImageSwitcher = styled.div`
+  position: relative;
+  cursor: pointer;
   margin: 0 auto;
   width: ${SQUARE};
   height: ${SQUARE};
-  background: url(${props => props.url}) 50% 30% transparent;
+  & > div {
+    background-size: cover;
+  }
+
+  & > div.illustrator:hover {
+    opacity: 0;
+    ${props => props.theme.transition};
+  }
+`;
+
+const Image = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 100%;
+  background: url(${props => props.url}) 50% 50% transparent;
 `;
 
 const Name = styled.div`
@@ -91,7 +109,13 @@ const Header = () => (
           </Link>
         </Name>
         <nav>
-          <Image url="https://cdn.pixabay.com/photo/2017/11/23/07/47/babe-2972221__480.jpg"></Image>
+          <ImageSwitcher>
+            <Image className="picture" url="https://i.ibb.co/f8hLCr8/profile-picture.png"></Image>
+            <Image
+              className="illustrator"
+              url="https://i.ibb.co/sqS97Jj/profile-illustrator.png"
+            ></Image>
+          </ImageSwitcher>
           <Bio>
             안녕하세요. 주니어 개발자 최호중입니다. 컴퓨터 공학을 전공하면서 실무와 이론적인
             지식까지 겸비한 개발자입니다.
