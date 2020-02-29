@@ -52,20 +52,21 @@ const Intro = styled.section`
 const Synopsis = styled.div`
   display: flex;
   flex-flow: row;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 620px) {
     flex-flow: column;
   }
   width: 100%;
   border: 2px solid #f4f4f4;
   background-color: #fafafa;
   padding: 2%;
+  word-break: break-all;
 `;
 
 const SquareThumbnail = styled.div`
   min-width: 300px;
   height: 400px;
   margin-right: 5%;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 620px) {
     margin: 0 0 2.5%;
   }
   background: url(${props => props.src}) center center transparent;
