@@ -69,6 +69,10 @@ const ProfilePic = styled.div`
   background: url(${props => props.src}) no-repeat center center;
   background-size: contain;
   transform: scaleX(-1);
+  @media screen and (max-width: 1200px) {
+    transform: scaleX(1);
+    ${props => props.theme.transition};
+  }
   /* img {
     width: 100%;
     height: 100%;
