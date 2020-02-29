@@ -73,13 +73,17 @@ const Name = styled.div`
 `;
 
 const Bio = styled.div`
-  text-align: center;
   padding: 20px;
   display: flex;
-  justify-content: center;
-  font-weight: normal;
-  font-size: 0.7em;
-  line-height: 1.25em;
+  p {
+    text-indent: 1em;
+    font-size: 0.7em;
+    line-height: 1.25em;
+    strong {
+      font-weight: 700;
+      color: ${props => props.theme.yellowColor};
+    }
+  }
 `;
 
 const Contacts = styled.ul`
@@ -123,8 +127,10 @@ const Header = () => (
             ></Image>
           </ImageSwitcher>
           <Bio>
-            안녕하세요. 주니어 개발자 최호중입니다. 컴퓨터 공학을 전공하면서 실무와 이론적인
-            지식까지 겸비한 개발자입니다.
+            <p>
+              안녕하세요. 주니어 개발자 <strong>최호중</strong>입니다. 컴퓨터 공학을 전공하면서
+              실무와 이론적인 지식을 겸비한 개발자입니다.
+            </p>
           </Bio>
           <Contacts>
             <Contact>
