@@ -39,16 +39,15 @@ const Content = styled.div`
 const Intro = styled.section``;
 
 const ProfilePic = styled.div`
-  min-width: 400px;
-  height: auto;
-  img {
+  min-width: 300px;
+  min-height: 300px;
+  background: url(${props => props.src}) no-repeat center center;
+  background-size: contain;
+  transform: scaleX(-1);
+  /* img {
     width: 100%;
     height: 100%;
-  }
-  @media screen and (max-width: 1200px) {
-    margin-top: 20px;
-    min-width: 70%;
-  }
+  } */
 `;
 
 const SubTitle = styled.div`
@@ -120,12 +119,7 @@ const About = () => {
             </Button>
           </p>
         </Intro>
-        <ProfilePic>
-          <img
-            src="https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_1280.jpg"
-            alt="Profile Picture"
-          />
-        </ProfilePic>
+        <ProfilePic src="https://avatars2.githubusercontent.com/u/22428471?s=460&v=4" />
       </Content>
       <Content>
         <SkillOverview>
