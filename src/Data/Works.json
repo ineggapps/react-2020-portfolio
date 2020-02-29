@@ -3,7 +3,7 @@
     "id": "java-library",
     "title": "도서관",
     "img": "https://i.ibb.co/Bz250XW/works-library.png",
-    "description": "도서관 만들기 in Java Console"
+    "description": "객체지향의 이해를 돕기 위해 자바 내에서 어떻게 클래스를 분할하고 결합하는지를 학습하고자 만들게 된 콘솔 Java 프로젝트입니다."
   },
   {
     "id": "farmpet2",
@@ -19,26 +19,26 @@
   },
   {
     "id": "nomflix",
-    "title": "Nomflix",
+    "title": "영화정보 열람사이트",
     "img": "https://i.ibb.co/hsMrqYZ/works-nomflix.png",
-    "description": "Only React webpage"
+    "description": "리액트를 처음 배우고 나서 컴포넌트 재활용이라는 리액트를 통해 SPA라는 새로운 패러다임을 익히기 위해 프로젝트를 만들었습니다."
   },
   {
     "id": "wetube",
-    "title": "Wetube",
+    "title": "유튜브 클론",
     "img": "https://i.ibb.co/PgqK1dQ/works-wetube.png",
-    "description": "with Node.js express"
+    "description": "노드의 express와 pug.js를 통하여 어떻게 웹사이트를 구축하고 개발할 것인가를 학습했습니다. 또한 요즘은 거의 대중화된 OAuth를 구현해보기 위해 시작한 프로젝트입니다."
   },
   {
     "id": "inbody",
-    "title": "Inbody",
+    "title": "체성분분석 사이트",
     "img": "https://i.ibb.co/61vNHrt/works-inbody.png",
-    "description": "PHP version"
+    "description": "헬스장에 비치된 체성분분석기의 분석 결과를 바탕으로 통계를 그래프로 보여주는 프로젝트입니다."
   },
   {
     "id": "mmorning",
-    "title": "엠모닝 안드로이드",
+    "title": "유튜브 재생 모닝콜",
     "img": "https://i.ibb.co/YDPkTq7/works-mmorning.png",
-    "description": "엠모닝 안드로이드 앱"
+    "description": "T아카데미 안드로이드 전문가과정을 수료한 뒤 만들고자 하는 앱을 직접 기획하여 배포까지 경험한 앱입니다."
   }
 ]
