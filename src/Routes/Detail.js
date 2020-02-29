@@ -142,11 +142,9 @@ const Detail = ({
           <h2>{detail.title}</h2>
           <p>{detail.subtitle}</p>
           <p>
-            <a href={LINK_CONTACT} target="_blank">
-              <Button type="primary" icon="caret-right">
-                Contact Me
-              </Button>
-            </a>
+            <Button type="primary" icon="pic-left" onClick={() => history.replace(PAGE_PORTFOLIO)}>
+              목록
+            </Button>
           </p>
         </Intro>
       </Content>
