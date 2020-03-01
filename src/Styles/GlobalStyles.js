@@ -22,6 +22,10 @@ export default createGlobalStyle`
     h1, h2{
         font-weight:900;   
         font-size: 2em;
+        line-height:1.2em;
+    }
+    h2{
+        padding-bottom:10px;
     }
     a{
         text-decoration:none;
