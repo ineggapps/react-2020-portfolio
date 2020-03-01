@@ -4,6 +4,7 @@ import Gnb from "./Gnb";
 import { GithubIcon, EmailIcon } from "./Icons";
 import { PAGE_ABOUT } from "./Routes";
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 
 const Container = styled.header`
   position: fixed;
@@ -114,7 +115,7 @@ const Header = () => (
         <Name>
           <Link to={PAGE_ABOUT}>
             <h1>
-              <img src="https://i.ibb.co/wLWfgNK/profile-logo-white.png" alt="Hojoong Choi" />
+              <Logo />
             </h1>
           </Link>
         </Name>
