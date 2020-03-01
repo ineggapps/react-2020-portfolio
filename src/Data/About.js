@@ -101,9 +101,28 @@ export const skillsOfOthers = [
   }
 ];
 
+const hideSkills = [
+  {
+    id: "android",
+    title: "Android",
+    img: "/images/skills/android.png"
+  },
+  {
+    id: "d3js",
+    title: "d3.js",
+    img: "/images/skills/d3js.png"
+  },
+  {
+    id: "vbnet",
+    title: "VB.NET",
+    img: "/images/skills/vbnet.png"
+  }
+];
+
 export const allSkills = [
   ...skillsOfFrontend,
   ...skillsOfBackEnd,
   ...skillsOfProgramming,
-  ...skillsOfOthers
+  ...skillsOfOthers,
+  ...hideSkills
 ];

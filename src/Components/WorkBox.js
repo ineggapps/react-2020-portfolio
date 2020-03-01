@@ -1,9 +1,22 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { Button } from "antd";
 import { Link } from "react-router-dom";
 import { PAGE_PORTFOLIO } from "./Routes";
+import { allSkills } from "../Data/About";
+
+const getSkillImagePath = id => {
+  let path;
+  allSkills.forEach(a => {
+    if (a.id === id) {
+      path = a.img;
+      return;
+    }
+  });
+  return path;
+};
 
 const Box = styled.div`
   border: 1px solid #f0f0f0;
@@ -36,6 +49,16 @@ const Overview = styled.div`
   flex-flow: column;
   padding: 2%;
   width: 100%;
+  img {
+    width: 30px;
+    height: 30px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  img.hide {
+    display: none;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -60,7 +83,7 @@ const TopComponent = styled(Overlay)`
   align-items: center;
 `;
 
-const WorkBox = ({ id, img, title, description }) => (
+const WorkBox = ({ id, img, title, description, skills }) => (
   <Wrapper>
     <Overlay></Overlay>
     <TopComponent>
@@ -73,9 +96,29 @@ const WorkBox = ({ id, img, title, description }) => (
       <Overview>
         <h4>{title}</h4>
         <p>{description}</p>
+        <p>
+          {skills &&
+            skills.length > 0 &&
+            skills.map((s, idx) => {
+              const path = getSkillImagePath(s);
+              return path ? (
+                <img key={idx} src={path} alt={s} />
+              ) : (
+                <img className="hide" src="#" key={idx} alt="null" />
+              );
+            })}
+        </p>
       </Overview>
     </Box>
   </Wrapper>
 );
 
 export default WorkBox;
+
+WorkBox.propTypes = {
+  id: PropTypes.string,
+  img: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  skills: PropTypes.arrayOf(PropTypes.string)
+};
