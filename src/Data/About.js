@@ -83,3 +83,11 @@ export const skillsOfProgramming = [
     content: "객체지향 패러다임을 이해하고 각 역할별로 클래스를 분리할 수 있습니다."
   }
 ];
+export const skillsOfOthers = [
+  {
+    title: "Ubuntu",
+    img: getUrl("/images/skills/ubuntu.png"),
+    content:
+      "리눅스 시스템의 기본적인 명령어를 이용하여 nginx 및 DBMS 서버를 작동시킬 수 있으며, 이미 포트폴리오 중 다수가 개인 서버에서 구동 중입니다."
+  }
+];

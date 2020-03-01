@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { skillsOfFrontend, skillsOfBackEnd, skillsOfProgramming } from "../Data/About";
+import {
+  skillsOfFrontend,
+  skillsOfBackEnd,
+  skillsOfProgramming,
+  skillsOfOthers
+} from "../Data/About";
 import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { PAGE_PORTFOLIO } from "../Components/Routes";
@@ -215,6 +220,22 @@ const About = () => {
         <h3>Programming Language</h3>
         <Skills>
           {skillsOfProgramming.map((s, idx) => (
+            <Skill key={idx}>
+              <SkillBox>
+                <p>
+                  <img src={s.img} alt={s.title} />
+                </p>
+                <p>{s.title.toLocaleUpperCase()}</p>
+                <p>{s.content}</p>
+              </SkillBox>
+            </Skill>
+          ))}
+        </Skills>
+      </Content>
+      <Content className="skills">
+        <h3>Others</h3>
+        <Skills>
+          {skillsOfOthers.map((s, idx) => (
             <Skill key={idx}>
               <SkillBox>
                 <p>
