@@ -3,8 +3,9 @@ import styled from "styled-components";
 import details from "../Data/Details.json";
 import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
-import { PAGE_PORTFOLIO, LINK_CONTACT } from "../Components/Routes.js";
+import { PAGE_PORTFOLIO } from "../Components/Routes.js";
 import { LinkIcon, Disk } from "../Components/Icons.js";
+import { getUrl } from "../util";
 
 const Content = styled.div`
   &.flex-flow-column {

@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { getUrl } from "../util";
+
 import {
   skillsOfFrontend,
   skillsOfBackEnd,
@@ -207,7 +209,7 @@ const About = () => {
             <Skill key={idx}>
               <SkillBox>
                 <p>
-                  <img src={s.img} alt={s.title} />
+                  <img src={getUrl(s.img)} alt={s.title} />
                 </p>
                 <p>{s.title.toLocaleUpperCase()}</p>
                 <p>{s.content}</p>
@@ -223,7 +225,7 @@ const About = () => {
             <Skill key={idx}>
               <SkillBox>
                 <p>
-                  <img src={s.img} alt={s.title} />
+                  <img src={getUrl(s.img)} alt={s.title} />
                 </p>
                 <p>{s.title.toLocaleUpperCase()}</p>
                 <p>{s.content}</p>
@@ -239,7 +241,7 @@ const About = () => {
             <Skill key={idx}>
               <SkillBox>
                 <p>
-                  <img src={s.img} alt={s.title} />
+                  <img src={getUrl(s.img)} alt={s.title} />
                 </p>
                 <p>{s.title.toLocaleUpperCase()}</p>
                 <p>{s.content}</p>
