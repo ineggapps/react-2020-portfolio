@@ -79,6 +79,7 @@
     "subtitle": "Nomflix React Project",
     "synopsis": {
       "thumbnail": "https://cdn.pixabay.com/photo/2019/06/29/04/00/fisherman-4305368__480.jpg",
+      "link": "https://ineggapps.github.io/react-nomflix",
       "description": "백엔드를 공부하기 위해 youtube사이트를 클론하여 동영상을 업로드하는 Wetube사이트를 클론하였습니다. Passport.js의 OAuth를 이용하여 github 계정이나 facebook 계정으로 로그인할 수 있도록 하였으며 로그인 시에 동영상 업로드가 가능합니다.",
       "requirements": ["React"]
     },
@@ -106,6 +107,8 @@
     "subtitle": "Inbody php Project",
     "synopsis": {
       "thumbnail": "https://cdn.pixabay.com/photo/2020/02/20/12/12/cat-4864605__480.jpg",
+      "link": "http://body.inegg.com",
+      "document": "http://body.inegg.com/portfolio.pdf",
       "description": "단 7일 만에 완성해 보기로 한 프로젝트입니다. 그동안 실제 서비스로 개시해도 손색이 없을 정도로 완성도에 집중해왔다면, 이번에는 완벽보다는 좀 더 빠른 시일 안에 원하고자 하는 기능을 좀 더 빨리 구현하는 쪽으로 방향을 두었습니다. 완벽에 가까워지면 숙련도가 높아지고 시행착오를 겪으며 경험치가 올라가지만, IT생태계가 급변함에 따라 등장하는 많은 기술들을 배우기에는 다소 제약이 있다는 것이 한계점입니다. 따라서 새롭게 등장하는 기술을 좀 더 빨리 익히면서 만들어보고자 하였습니다.",
       "requirements": ["PHP class", "jQuery", "d3.js"]
     },
@@ -127,7 +130,6 @@
       "thumbnail": "https://cdn.pixabay.com/photo/2020/02/18/16/44/junction-4860035__480.jpg",
       "link": "http://inegg.tistory.com",
       "document": "http://body.inegg.com/mmorning.pdf",
-      "synopsis": "알람",
       "requirements": ["Android"]
     },
     "overviews": [
@@ -149,6 +151,43 @@
         "content": [
           "사용자에게 편의를 주는 애플리케이션은 많은데, 이런 앱을 직접 구현해보고자 하는 생각이 들게 되었습니다. 하지만 학부 시절에 배운 안드로이드 학문의 깊이는 얕고 일부분만을 배웠기 때문에 무엇인가를 개발하기에는 역부족이었습니다. 이후에 티아카데미에서 주관하는 \"Android Application 개발 전문가 과정\"을 수강하면서 배운 내용을 바탕으로 이 앱을 작성할 수 있게 되었습니다. ",
           "자바의 8할은 안드로이드가 제게 일러주었다고 할 수 있을 정도로 많은 공부를 하면서 자바라는 언어의 매력에 빠져들게 되었던 계기가 되었습니다. 언어를 배우면서 무언가 실용적인 애플리케이션을 만들고 배포한다는 것은 개발자 인생에서 가장 큰 보람이 느껴지는 때가 아닌가 싶습니다. "
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reporter",
+    "title": "클라우드 리포트 제출 프로그램",
+    "subtitle": "작성한 보고서를 온라인 전산 시스템을 통해 제출하는 프로그램입니다.",
+    "synopsis": {
+      "thumbnail": "https://cdn.pixabay.com/photo/2016/12/11/12/02/bled-1899264__480.jpg",
+      "description": "작성한 보고서를 종잇장으로 출력하는 대신에 온라인으로 제출하는 것이 좀 더 편리한 방법이 아닐까 생각하며 VB.NET으로 개발한 프로그램입니다.",
+      "requirements": ["VB.NET", "PHP (파일 업로드)", "Mysql"]
+    },
+    "overviews": [
+      {
+        "section": "기획 의도",
+        "content": [
+          "이 프로그램은 학생들의 입장보다는 학생들을 관리하는 교수님과 조교의 입장에서 생각하여 기획하였습니다. 가르치는 반이 최소 2곳 이상이 될 것이고 학생이 35명 정도라고 가정한다면 분명 물리적으로 과제물을 관리하기란 쉽지 않을 것입니다. 과제물을 확인하고 성취도를 평가할 때 혼동할 우려도 생길 수 있기 때문에 과제물의 보관을 용이하게 하고 편의성까지 고려하여 만든 클라우드 리포트 제출 프로그램을 고안하게 되었습니다."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jeju",
+    "title": "제주도 수학여행 슬라이드",
+    "subtitle": "고등학교 2학년 때 수학여행을 다녀온 뒤 공모전에 응모한 작품입니다.",
+    "synopsis": {
+      "thumbnail": "https://cdn.pixabay.com/photo/2016/12/11/12/02/bled-1899264__480.jpg",
+      "link": "http://jeju.inegg.com",
+      "description": "제주도 사진을 이미지 슬라이드 형식으로 볼 수 있는 홈페이지를 개설하였습니다. Flash로 감상하실 수 있습니다.",
+      "requirements": ["HTML", "Flash legacy"]
+    },
+    "overviews": [
+      {
+        "section": "기획 의도",
+        "content": [
+          "평소 사진찍기를 좋아했는데, 제주도 수학여행을 가서 우리나라의 아름다운 경치를 사진으로 남기고 오게 되었습니다. 마침 수학여행 이후에 공모전이 열렸는데, 이 작품을 작성하고 제출하였습니다. 그런데 지금은 쓰이지 않는 Flash로 작성된 작품입니다. 감상에 불편을 드린 점 양해 부탁드립니다."
         ]
       }
     ]

@@ -67,6 +67,8 @@ const Project = styled.li`
   }
 `;
 
+const getUrl = path => process.env.PUBLIC_URL + path;
+
 const Portfolio = () => {
   return (
     <>
@@ -91,7 +93,7 @@ const Portfolio = () => {
         <Projects>
           {works.map(w => (
             <Project key={w.id}>
-              <WorkBox id={w.id} img={w.img} title={w.title} description={w.description} />
+              <WorkBox id={w.id} img={getUrl(w.img)} title={w.title} description={w.description} />
             </Project>
           ))}
         </Projects>
