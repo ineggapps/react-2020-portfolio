@@ -31,7 +31,6 @@ const ContentWrapper = styled.div`
   padding-left: ${props => props.theme.headerWidth};
   @media screen and (max-width: ${props => props.theme.responsivePC}) {
     padding-left: 0;
-    padding-top: 20px;
 
     nav {
       display: none;
