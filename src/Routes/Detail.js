@@ -173,7 +173,7 @@ const Detail = ({
           <p>{detail.subtitle}</p>
           <p>
             {skills.map(s => (
-              <img key={s.id} className="skill" src={s.img} alt={s.title} />
+              <img key={s.id} className="skill" src={getUrl(s.img)} alt={s.title} />
             ))}
           </p>
           <p>
@@ -186,7 +186,9 @@ const Detail = ({
       <Content>
         <Synopsis>
           <SquareThumbnail
-            src={detail.synopsis && detail.synopsis.thumbnail ? detail.synopsis.thumbnail : ""}
+            src={
+              detail.synopsis && detail.synopsis.thumbnail ? getUrl(detail.synopsis.thumbnail) : ""
+            }
           />
           <SynopsisBox>
             <h3>{detail.title}</h3>

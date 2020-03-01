@@ -6,12 +6,13 @@ import { Button } from "antd";
 import { Link } from "react-router-dom";
 import { PAGE_PORTFOLIO } from "./Routes";
 import { allSkills } from "../Data/About";
+import { getUrl } from "../util";
 
 const getSkillImagePath = id => {
   let path;
   allSkills.forEach(a => {
     if (a.id === id) {
-      path = a.img;
+      path = getUrl(a.img);
       return;
     }
   });
@@ -50,6 +51,8 @@ const Overview = styled.div`
   padding: 2%;
   width: 100%;
   img {
+    margin: 10px 0;
+    border-radius: 100%;
     width: 30px;
     height: 30px;
     &:not(:last-child) {

@@ -193,7 +193,7 @@ const About = () => {
             <Skill key={idx}>
               <SkillBox>
                 <p>
-                  <img src={s.img} alt={s.title} />
+                  <img src={getUrl(s.img)} alt={s.title} />
                 </p>
                 <p>{s.title.toLocaleUpperCase()}</p>
                 <p>{s.content}</p>
