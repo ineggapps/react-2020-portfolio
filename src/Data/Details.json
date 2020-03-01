@@ -84,7 +84,7 @@
     "synopsis": {
       "thumbnail": "/images/works/nomflix.png",
       "link": "https://ineggapps.github.io/react-nomflix",
-      "description": "백엔드를 공부하기 위해 youtube사이트를 클론하여 동영상을 업로드하는 Wetube사이트를 클론하였습니다. Passport.js의 OAuth를 이용하여 github 계정이나 facebook 계정으로 로그인할 수 있도록 하였으며 로그인 시에 동영상 업로드가 가능합니다.",
+      "description": "리액트와 axios를 이용하여 특정 웹사이트에서 제공하는 API를 이용하여 어떻게 JSON데이터를 파싱하는지에 관해 공부할 수 있는 좋은 기회였습니다.",
       "requirements": ["React"]
     },
     "overviews": [{ "section": "Project 훑어보기", "content": ["본 프로젝트는 작성되었습니다."] }]
@@ -96,8 +96,8 @@
     "subtitle": "Node.js로 만들어 보는 유튜브 클론 코딩",
     "synopsis": {
       "thumbnail": "/images/works/wetube.png",
-      "link":"http://wetube.inegg.com/"
-      "description": "Node.js의 Express 프레임워크로 서버를 구축해보기 위해서 유튜브를 클론하였습니다. 이번 프로젝트를 진행하면서 passport.js의 OAuth 인증을 통해 Github, Facebook 소셜 로그인 기능을 구현해 보았습니다.",
+      "link": "http://wetube.inegg.com/",
+      "description": "백엔드를 공부하기 위해 youtube사이트를 클론하여 동영상을 업로드하는 Wetube사이트를 클론하였습니다. Passport.js의 OAuth를 이용하여 github 계정이나 facebook 계정으로 로그인할 수 있도록 하였으며 로그인 시에 동영상 업로드가 가능합니다.",
       "requirements": ["Node.js", "PUG"]
     },
     "overviews": [
