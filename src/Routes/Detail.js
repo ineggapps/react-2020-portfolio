@@ -6,6 +6,7 @@ import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { PAGE_PORTFOLIO } from "../Components/Routes.js";
 import { LinkIcon, Disk } from "../Components/Icons.js";
 import { getUrl } from "../util";
+import { allSkills } from "../Data/About.js";
 
 const Content = styled.div`
   &.flex-flow-column {
@@ -46,6 +47,14 @@ const Intro = styled.section`
     padding: 0 10% !important;
     @media screen and (max-width: 1200px) {
       padding: 0 !important;
+    }
+  }
+  img.skill {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    &:not(:last-child) {
+      margin-right: 20px;
     }
   }
 `;
@@ -131,17 +140,42 @@ const Detail = ({
     params: { id }
   }
 }) => {
+  //detail 아이템 추출
   let detail = details.filter(item => item.id == id)[0];
   if (detail == undefined) {
     history.replace(PAGE_PORTFOLIO);
     return <></>;
   }
+  //detail json추출을 기반으로 사용된 기술 추출
+  // let skills =
+  //   detail.skills && detail.skills.length > 0
+  //     ? detail.skills.map(s => allSkills.filter(a => a.id === s))
+  //     : [];
+  let skills = [];
+  if (detail.skills && detail.skills.length > 0) {
+    console.log("추출 시작");
+    detail.skills.forEach(d => {
+      allSkills.forEach(a => {
+        if (d === a.id) {
+          skills.push(a);
+          return;
+        }
+      });
+    });
+  }
+  console.log("skills=", skills);
+
   return (
     <>
       <Content bgColor="#FAFAFA">
         <Intro>
           <h2>{detail.title}</h2>
           <p>{detail.subtitle}</p>
+          <p>
+            {skills.map(s => (
+              <img key={s.id} className="skill" src={s.img} alt={s.title} />
+            ))}
+          </p>
           <p>
             <Button type="primary" icon="pic-left" onClick={() => history.replace(PAGE_PORTFOLIO)}>
               목록

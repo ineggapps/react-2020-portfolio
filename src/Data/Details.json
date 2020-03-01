@@ -1,6 +1,7 @@
 [
   {
     "id": "java-library",
+    "skills": ["java"],
     "title": "도서관 시스템",
     "subtitle": "Java를 이용하여 객체지향 패러다임을 이해하기 위해 도서관 시스템을 작성해 보았습니다. (In Java Console)",
     "synopsis": {
@@ -22,6 +23,7 @@
   },
   {
     "id": "farmpet2",
+    "skills": ["react", "nodejs", "graphql", "prisma", "scss"],
     "title": "반려동물SNS 리액트 버전",
     "subtitle": "Farmpet2는 반려동물과 일상을 살아가는 이야기를 공유할 수 있는 SNS플랫폼을 구현하고자 한 프로젝트입니다. 카카오스토리와 인스타그램의 레이아웃을 오마주하여 디자인을 하게 되었습니다.",
     "synopsis": {
