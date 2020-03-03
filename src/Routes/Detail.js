@@ -205,7 +205,7 @@ const Detail = ({
                 <li>
                   <a href={detail.synopsis.document} target="_blank">
                     <Disk />
-                    View document
+                    문서 보기
                   </a>
                 </li>
               )}
