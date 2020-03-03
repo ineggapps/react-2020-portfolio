@@ -153,7 +153,7 @@ const Detail = ({
   //     : [];
   let skills = [];
   if (detail.skills && detail.skills.length > 0) {
-    console.log("추출 시작");
+    // console.log("추출 시작");
     detail.skills.forEach(d => {
       allSkills.forEach(a => {
         if (d === a.id) {
@@ -173,7 +173,13 @@ const Detail = ({
           <p>{detail.subtitle}</p>
           <p>
             {skills.map(s => (
-              <img key={s.id} className="skill" src={getSkillUrl(s.img)} alt={s.title} />
+              <img
+                key={s.id}
+                className="skill"
+                src={getSkillUrl(s.img)}
+                alt={s.title}
+                title={s.title}
+              />
             ))}
           </p>
           <p>
