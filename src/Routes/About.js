@@ -219,7 +219,7 @@ const About = () => {
         </Skills>
       </Content>
       <Content className="skills">
-        <h3>Programming Language</h3>
+        <h3>Other Programming Languages</h3>
         <Skills>
           {skillsOfProgramming.map((s, idx) => (
             <Skill key={idx}>
