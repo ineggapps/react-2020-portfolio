@@ -169,6 +169,7 @@
     "subtitle": "작성한 보고서를 온라인 전산 시스템을 통해 제출하는 프로그램입니다.",
     "synopsis": {
       "thumbnail": "/images/works/reporter.png",
+      "document": "http://farmpet.inegg.com/reporter-doc.pdf",
       "description": "작성한 보고서를 종잇장으로 출력하는 대신에 온라인으로 제출하는 것이 좀 더 편리한 방법이 아닐까 생각하며 VB.NET으로 개발한 프로그램입니다.",
       "requirements": ["VB.NET", "PHP (파일 업로드)", "Mysql"]
     },
