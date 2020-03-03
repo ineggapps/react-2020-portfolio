@@ -88,7 +88,8 @@ export const skillsOfProgramming = [
     id: "java",
     title: "Java",
     img: "/java.png",
-    content: "객체지향 패러다임을 이해하고 각 역할별로 클래스를 분리할 수 있습니다."
+    content:
+      "객체지향 패러다임을 이해하고 각 역할별로 클래스를 분리할 수 있습니다. 저의 자바 선생님은 안드로이드가 8할이라고 할 수 있는 만큼 교육과정을 수강하면서 많은 문법과 디자인 패턴들을 익혔습니다. 추후 재직자과정을 통하여 Java Spring Framework를 수강할 예정입니다. (3월 28일 개강, 결제 완료)"
   }
 ];
 export const skillsOfOthers = [
@@ -105,15 +106,17 @@ export const skillsOfOthers = [
     img: "/git.png",
     content:
       "Git 원격저장소에서 Git repository를 먼저 생성하고 로컬 Git저장소에서 clone할 수 있으며, commit할 수 있습니다. 협업 시 fork하여 pull request를 하여 동료들이 작성한 코드 내용을 merge기능을 이용하여 결합할 수 있습니다. 브랜치를 생성하여 작업 단위를 분기하여 작성할 수 있습니다."
+  },
+  {
+    id: "android",
+    title: "Android",
+    img: "/android.png",
+    content:
+      "안드로이드가 공식 언어로 Kotlin을 추가하기 전에 자바를 이용하여 안드로이드 애플리케이션을 작성하였습니다(2015년 롤리팝까지, 현재 구직 포지션이 아닙니다). 배울 기회가 찾아온다면 Kotlin을 통하여 안드로이드를 다시 배워보고 싶습니다."
   }
 ];
 
 const hideSkills = [
-  {
-    id: "android",
-    title: "Android",
-    img: "/android.png"
-  },
   {
     id: "d3js",
     title: "d3.js",
