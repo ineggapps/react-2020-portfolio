@@ -5,7 +5,7 @@ import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { PAGE_PORTFOLIO } from "../Components/Routes.js";
 import { LinkIcon, Disk } from "../Components/Icons.js";
-import { getUrl } from "../util";
+import { getWorkUrl, getSkillUrl } from "../util";
 import { allSkills } from "../Data/About.js";
 
 const Content = styled.div`
@@ -173,7 +173,7 @@ const Detail = ({
           <p>{detail.subtitle}</p>
           <p>
             {skills.map(s => (
-              <img key={s.id} className="skill" src={getUrl(s.img)} alt={s.title} />
+              <img key={s.id} className="skill" src={getSkillUrl(s.img)} alt={s.title} />
             ))}
           </p>
           <p>
@@ -187,7 +187,9 @@ const Detail = ({
         <Synopsis>
           <SquareThumbnail
             src={
-              detail.synopsis && detail.synopsis.thumbnail ? getUrl(detail.synopsis.thumbnail) : ""
+              detail.synopsis && detail.synopsis.thumbnail
+                ? getWorkUrl(detail.synopsis.thumbnail)
+                : ""
             }
           />
           <SynopsisBox>

@@ -5,6 +5,7 @@ import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import WorkBox from "../Components/WorkBox.js";
 import { LINK_CONTACT } from "../Components/Routes.js";
+import { getWorkUrl } from "../util.js";
 
 const Content = styled.div`
   @media screen and (max-width: 1200px) {
@@ -67,8 +68,6 @@ const Project = styled.li`
   }
 `;
 
-const getUrl = path => process.env.PUBLIC_URL + path;
-
 const Portfolio = () => {
   return (
     <>
@@ -78,7 +77,7 @@ const Portfolio = () => {
           <p>
             초등학생 때 처음으로 HTML에 재미를 붙인 이후 컴퓨터 프로그래밍에도 점차 흥미를 느끼게
             되었습니다. 특성화 고등학교에 진학하여 컴퓨터공학의 전반적인 지식을 일찍 접할 수
-            있었습니다. 그동안 꾸준히 보람을 느끼기 위해서 개발에 관한 공부를 게을리하지 않았습니다.
+            있었습니다. 그동안 꾸준히 보람을 느끼면서 개발에 관한 공부를 진행했습니다.
           </p>
           <p>
             <a href={LINK_CONTACT} target="_blank">
@@ -96,7 +95,7 @@ const Portfolio = () => {
               <WorkBox
                 key={idx}
                 id={w.id}
-                img={getUrl(w.img)}
+                img={getWorkUrl(w.img)}
                 title={w.title}
                 description={w.description}
                 skills={w.skills}

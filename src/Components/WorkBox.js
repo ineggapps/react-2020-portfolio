@@ -6,13 +6,13 @@ import { Button } from "antd";
 import { Link } from "react-router-dom";
 import { PAGE_PORTFOLIO } from "./Routes";
 import { allSkills } from "../Data/About";
-import { getUrl } from "../util";
+import { getWorkUrl, getSkillUrl } from "../util";
 
 const getSkillImagePath = id => {
   let path;
   allSkills.forEach(a => {
     if (a.id === id) {
-      path = getUrl(a.img);
+      path = getSkillUrl(a.img);
       return;
     }
   });
