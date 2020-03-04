@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import details from "../Data/Details.json";
+import works from "../Data/Works.json";
 import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import WorkBox from "../Components/WorkBox.js";
@@ -90,19 +90,19 @@ const Portfolio = () => {
       </Content>
       <Content>
         <Projects>
-          {details.map((d, idx) => (
-            <Project key={d.id}>
+          {works.map((w, idx) => (
+            <Project key={w.id}>
               <WorkBox
                 key={idx}
-                id={d.id}
+                id={w.id}
                 img={
-                  d.synopsis && d.synopsis.thumbnail
-                    ? getWorkUrl(d.synopsis.thumbnail)
+                  w.synopsis && w.synopsis.thumbnail
+                    ? getWorkUrl(w.synopsis.thumbnail)
                     : getWorkUrl("/no-image.png")
                 }
-                title={d.title}
-                description={d.subtitle}
-                skills={d.skills}
+                title={w.title}
+                description={w.subtitle}
+                skills={w.skills}
               />
             </Project>
           ))}

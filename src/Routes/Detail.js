@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import details from "../Data/Details.json";
+import works from "../Data/Works.json";
 import { Button } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { PAGE_PORTFOLIO } from "../Components/Routes.js";
@@ -140,21 +140,21 @@ const Detail = ({
     params: { id }
   }
 }) => {
-  //detail 아이템 추출
-  let detail = details.filter(item => item.id == id)[0];
-  if (detail == undefined) {
+  //works 아이템 추출
+  let work = works.filter(item => item.id == id)[0];
+  if (works == undefined) {
     history.replace(PAGE_PORTFOLIO);
     return <></>;
   }
-  //detail json추출을 기반으로 사용된 기술 추출
+  //Works json추출을 기반으로 사용된 기술 추출
   // let skills =
-  //   detail.skills && detail.skills.length > 0
-  //     ? detail.skills.map(s => allSkills.filter(a => a.id === s))
+  //   works.skills && works.skills.length > 0
+  //     ? works.skills.map(s => allSkills.filter(a => a.id === s))
   //     : [];
   let skills = [];
-  if (detail.skills && detail.skills.length > 0) {
+  if (work.skills && work.skills.length > 0) {
     // console.log("추출 시작");
-    detail.skills.forEach(d => {
+    work.skills.forEach(d => {
       allSkills.forEach(a => {
         if (d === a.id) {
           skills.push(a);
@@ -169,8 +169,8 @@ const Detail = ({
     <>
       <Content bgColor="#FAFAFA">
         <Intro>
-          <h2>{detail.title}</h2>
-          <p>{detail.subtitle}</p>
+          <h2>{work.title}</h2>
+          <p>{work.subtitle}</p>
           <p>
             {skills.map(s => (
               <img
@@ -193,25 +193,23 @@ const Detail = ({
         <Synopsis>
           <SquareThumbnail
             src={
-              detail.synopsis && detail.synopsis.thumbnail
-                ? getWorkUrl(detail.synopsis.thumbnail)
-                : ""
+              work.synopsis && work.synopsis.thumbnail ? getWorkUrl(work.synopsis.thumbnail) : ""
             }
           />
           <SynopsisBox>
-            <h3>{detail.title}</h3>
+            <h3>{work.title}</h3>
             <ul>
-              {detail.synopsis && detail.synopsis.link && (
+              {work.synopsis && work.synopsis.link && (
                 <li>
-                  <a href={detail.synopsis.link} target="_blank">
+                  <a href={work.synopsis.link} target="_blank">
                     <LinkIcon />
-                    {detail.synopsis.link}
+                    {work.synopsis.link}
                   </a>
                 </li>
               )}
-              {detail.synopsis && detail.synopsis.document && (
+              {work.synopsis && work.synopsis.document && (
                 <li>
-                  <a href={detail.synopsis.document} target="_blank">
+                  <a href={work.synopsis.document} target="_blank">
                     <Disk />
                     문서 보기
                   </a>
@@ -220,17 +218,17 @@ const Detail = ({
               <li>
                 <h4>작품 소개</h4>
                 <p>
-                  {detail.synopsis && detail.synopsis.description
-                    ? detail.synopsis.description
+                  {work.synopsis && work.synopsis.description
+                    ? work.synopsis.description
                     : "준비 중입니다."}
                 </p>
               </li>
               <li>
                 <h4>프로젝트 요구사항</h4>
                 <ul>
-                  {detail.synopsis &&
-                    detail.synopsis.requirements &&
-                    detail.synopsis.requirements.map((r, idx) => <li key={idx}>{r}</li>)}
+                  {work.synopsis &&
+                    work.synopsis.requirements &&
+                    work.synopsis.requirements.map((r, idx) => <li key={idx}>{r}</li>)}
                 </ul>
               </li>
             </ul>
@@ -238,8 +236,8 @@ const Detail = ({
         </Synopsis>
       </Content>
       <Content className="flex-flow-column">
-        {detail.overviews &&
-          detail.overviews.map((o, idx) => (
+        {work.overviews &&
+          work.overviews.map((o, idx) => (
             <Overview key={idx}>
               <h2>{o.section}</h2>
               {o.content && o.content.map ? (
