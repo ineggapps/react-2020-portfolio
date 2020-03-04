@@ -78,8 +78,8 @@ const ProfilePic = styled.div`
   transform: scaleX(-1);
   @media screen and (max-width: 1200px) {
     transform: scaleX(1);
-    ${props => props.theme.transition};
   }
+  ${props => props.theme.transition};
   /* img {
     width: 100%;
     height: 100%;
