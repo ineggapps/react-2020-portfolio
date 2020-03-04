@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import LinesEllipsis from "react-lines-ellipsis";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { Button } from "antd";
 import { Link } from "react-router-dom";
@@ -98,7 +99,15 @@ const WorkBox = ({ id, img, title, description, skills }) => (
       <Thumbnail src={img}></Thumbnail>
       <Overview>
         <h4>{title}</h4>
-        <p>{description}</p>
+        <p>
+          <LinesEllipsis
+            text={description}
+            maxLine="3"
+            ellipsis="..."
+            trimRight
+            basedOn="letters"
+          />
+        </p>
         <p>
           {skills &&
             skills.length > 0 &&
