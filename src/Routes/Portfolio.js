@@ -101,7 +101,7 @@ const Portfolio = () => {
                     : getWorkUrl("/no-image.png")
                 }
                 title={d.title}
-                description={d.description}
+                description={d.subtitle}
                 skills={d.skills}
               />
             </Project>
