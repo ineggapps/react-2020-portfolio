@@ -5,6 +5,7 @@ import { GithubIcon, EmailIcon } from "./Icons";
 import { PAGE_ABOUT } from "./Routes";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import { getHeaderUrl } from "../util";
 
 const Container = styled.header`
   position: fixed;
@@ -121,11 +122,8 @@ const Header = () => (
         </Name>
         <nav>
           <ImageSwitcher>
-            <Image className="picture" url="https://i.ibb.co/f8hLCr8/profile-picture.png"></Image>
-            <Image
-              className="illustrator"
-              url="https://i.ibb.co/sqS97Jj/profile-illustrator.png"
-            ></Image>
+            <Image className="picture" url={getHeaderUrl("/profile-picture.png")}></Image>
+            <Image className="illustrator" url={getHeaderUrl("/profile-illustrator.png")}></Image>
           </ImageSwitcher>
           <Bio>
             <p>

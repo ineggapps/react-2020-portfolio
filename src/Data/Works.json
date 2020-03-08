@@ -71,7 +71,7 @@
     "id": "farmpet",
     "skills": ["html5", "css3", "javascript", "jquery", "php", "mariadb", "nginx", "ubuntu"],
     "title": "반려동물SNS PHP버전",
-    "subtitle": "페이스북 같은 SNS가 유해을 타면서 피드 형태의 새로운 게시판을 구현해보고자 시작하게 된 프로젝트입니다.",
+    "subtitle": "페이스북 같은 SNS가 유행을 탔을 때 피드 형태의 새로운 게시판을 구현해보고 싶어서 시작하게 된 프로젝트입니다.",
     "synopsis": {
       "thumbnail": "/farmpet.png",
       "link": "http://farmpet.inegg.com",
