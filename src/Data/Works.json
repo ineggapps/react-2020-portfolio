@@ -1,5 +1,17 @@
 [
   {
+    "id": "pharmacy",
+    "skills": ["java", "oracle", "git"],
+    "title": "코로나 약국",
+    "subtitle": "오라클 데이터베이스를 연동하여 데이터베이스와 JAVA의 개념을 복습하기 위해 팀프로젝트를 만들었습니다.",
+    "synopsis": {
+      "thumbnail": "/pharmacy.png",
+      "description": "이번 기회로 CRUD만이 아닌 트리거, 오라클 Job Scheduler, 프로시저 등 PL/SQL에 관하여서도 심도 있게 이해하였습니다.",
+      "document": "https://github.com/ineggapps/java-2020-academy-pharmacy",
+      "requirements": ["객체지향적 마인드", "Java", "오라클 PL/SQL", "Git 저장소 (협업)"]
+    }
+  },
+  {
     "id": "react-2020-portfolio",
     "skills": ["react", "html5", "css3", "git"],
     "title": "작품모음집 홈페이지",
