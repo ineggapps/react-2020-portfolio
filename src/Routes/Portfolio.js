@@ -28,7 +28,7 @@ const Content = styled.div`
   &.skills {
     padding: 0 8%;
   }
-  background-color: ${props => props.bgColor};
+  background-color: ${(props) => props.bgColor};
   p {
     width: 100%;
     width: 100%;
@@ -75,9 +75,10 @@ const Portfolio = () => {
         <Intro>
           <h2>포트폴리오</h2>
           <p>
-            초등학생 때 처음으로 HTML에 재미를 붙인 이후 컴퓨터 프로그래밍에도 점차 흥미를 느끼게
-            되었습니다. 특성화 고등학교에 진학하여 컴퓨터공학의 전반적인 지식을 일찍 접할 수
-            있었습니다. 그동안 꾸준히 보람을 느끼면서 개발에 관한 공부를 진행했습니다.
+            유년시절부터 집에 일찍 들인 컴퓨터를 접하면서 호기심을 가지게 되었습니다. 중학교
+            때부터는 개인적으로 관심이 있는 웹사이트 구축 공부를 하고 싶어서 개발에 열정을 품고
+            프로그래밍을 공부하였습니다. 이하 작품들은 제가 개발한 것들을 포트폴리오 형식으로 올린
+            것입니다.
           </p>
           <p>
             <a href={LINK_CONTACT} target="_blank">
