@@ -9,9 +9,9 @@ import { getHeaderUrl } from "../util";
 
 const Container = styled.header`
   position: fixed;
-  width: ${props => props.theme.headerWidth};
+  width: ${(props) => props.theme.headerWidth};
   height: 100vh;
-  background-color: ${props => props.theme.theme1Color};
+  background-color: ${(props) => props.theme.theme1Color};
   color: white;
   &::-webkit-scrollbar {
     width: 6px;
@@ -44,7 +44,7 @@ const ImageSwitcher = styled.div`
 
   & > div.illustrator:hover {
     opacity: 0;
-    ${props => props.theme.transition};
+    ${(props) => props.theme.transition};
   }
 `;
 
@@ -55,7 +55,7 @@ const Image = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  background: url(${props => props.url}) 50% 50% transparent;
+  background: url(${(props) => props.url}) 50% 50% transparent;
 `;
 
 const Name = styled.div`
@@ -83,7 +83,7 @@ const Bio = styled.div`
     line-height: 1.25em;
     strong {
       font-weight: 700;
-      color: ${props => props.theme.yellowColor};
+      color: ${(props) => props.theme.yellowColor};
     }
   }
 `;
@@ -133,7 +133,7 @@ const Header = () => (
           </Bio>
           <Contacts>
             <Contact>
-              <a href="https://github.com/ineggapps" target="_blank">
+              <a href="https://github.com/sannimdev" target="_blank">
                 <GithubIcon />
               </a>
             </Contact>

@@ -7,7 +7,7 @@
     "synopsis": {
       "thumbnail": "/pharmacy.png",
       "description": "CRUD만이 아닌 트리거, 오라클 Job Scheduler, 프로시저 등 PL/SQL에 관하여서도 심도 있게 이해하였습니다.",
-      "document": "https://github.com/ineggapps/java-2020-academy-pharmacy",
+      "document": "https://github.com/sannimdev/java-2020-academy-pharmacy",
       "requirements": ["객체지향적 마인드", "Java", "오라클 PL/SQL", "Git 저장소 (협업)"]
     },
     "overviews": [
@@ -35,8 +35,8 @@
     "synopsis": {
       "thumbnail": "/react-2020-portfolio.png",
       "description": "이력서만을 제출하기보다는, 저를 좀 더 저만의 색깔로 표현하기 위해 제가 가장 좋아하는 React라는 기술로 개인홈페이지를 만들고 좀 더 많은 것들을 표현해 보았습니다.",
-      "link": "https://ineggapps.github.com/react-2020-portfolio",
-      "document": "https://github.com/ineggapps/react-2020-portfolio",
+      "link": "https://sannimdev.github.com/react-2020-portfolio",
+      "document": "https://github.com/sannimdev/react-2020-portfolio",
       "requirements": ["리액트", "Git 저장소 (협업)"]
     }
   },
@@ -48,8 +48,8 @@
     "synopsis": {
       "thumbnail": "/library.png",
       "description": "자바를 이용하여 도서관 시스템을 만들었습니다.",
-      "link": "https://github.com/ineggapps/java-2020-academy-sslibrary",
-      "document": "https://github.com/ineggapps/java-2020-academy-sslibrary/blob/master/portfolio.pdf",
+      "link": "https://github.com/sannimdev/java-2020-academy-sslibrary",
+      "document": "https://github.com/sannimdev/java-2020-academy-sslibrary/blob/master/portfolio.pdf",
       "requirements": ["객체지향적 마인드", "Java", "Git 저장소 (협업)"]
     },
     "overviews": [
@@ -124,7 +124,7 @@
     "subtitle": "리액트를 처음 배우고 나서 컴포넌트 재활용이라는 리액트를 통해 SPA라는 새로운 패러다임을 익히기 위해 프로젝트를 만들었습니다.",
     "synopsis": {
       "thumbnail": "/nomflix.png",
-      "link": "https://ineggapps.github.io/react-nomflix",
+      "link": "https://sannimdev.github.io/react-nomflix",
       "description": "리액트와 axios를 이용하여 특정 웹사이트에서 제공하는 API를 이용하여 어떻게 JSON데이터를 파싱하는지에 관해 공부할 수 있었습니다. 기존에는 리액트를 어떻게 다루는지를 공부할 수 있는 좋은 기회를 가졌다면, 이번에는 제가 직접 서버를 만드는 것 대신 이미 API를 무료로 제공하는 사이트를 이용하여 JSON 형식의 데이터를 받아 와서 가공하여 처리하는 것이 어떻게 이루어지는지에 관해 몸소 체험할 수 있는 좋은 기회였습니다.",
       "requirements": ["React"]
     },
