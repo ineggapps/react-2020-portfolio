@@ -43,7 +43,7 @@ const ImageSwitcher = styled.div`
   }
 
   & > div.illustrator:hover {
-    opacity: 0;
+    /* opacity: 0; /* ref: deprecated image. The image has deleted. */
     ${(props) => props.theme.transition};
   }
 `;
@@ -122,7 +122,6 @@ const Header = () => (
         </Name>
         <nav>
           <ImageSwitcher>
-            <Image className="picture" url={getHeaderUrl("/profile-picture.png")}></Image>
             <Image className="illustrator" url={getHeaderUrl("/profile-illustrator.png")}></Image>
           </ImageSwitcher>
           <Bio>
@@ -138,7 +137,10 @@ const Header = () => (
               </a>
             </Contact>
             <Contact>
-              <a href="#" target="_blank">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScZRR1pw_Ha3gXgHbhUHpn5x5CVCgeMSNbCHipFtXxupCfWUQ/viewform"
+                target="_blank"
+              >
                 <EmailIcon />
               </a>
             </Contact>

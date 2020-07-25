@@ -4,7 +4,7 @@ export const skillsOfFrontend = [
     title: "React",
     img: "/react.png",
     content:
-      "컴포넌트를 재활용하여 사이트를 구성할 수 있습니다. React Hooks를 사용할 수 있고 React Router Dom을 이용하여 웹 사이트의 라우팅을 설계할 수 있습니다.",
+      "React Hooks 기반의 프로젝트에서 웹 서비스를 구축할 수 있습니다. REST API를 이용하여 가져 온 자료를 분석하여 프런트 단 화면을 능동적으로 구성할 수 있습니다.",
   },
   {
     id: "html5",
@@ -38,29 +38,16 @@ export const skillsOfFrontend = [
     id: "jquery",
     title: "jQuery",
     img: "/jquery.png",
-    content: "Vanila Javascript 대신에 jQuery를 이용하여 웹사이트를 동적으로 꾸밀 수 있습니다.",
+    content: "jQuery를 이용하여 DOM에 접근하고 REST API를 요청하거나 파싱할 수 있습니다.",
   },
 ];
 
 export const skillsOfBackEnd = [
   {
-    id: "nodejs",
-    title: "Node.js",
-    img: "/nodejs.png",
-    content:
-      "Express 프레임워크를 이용하여 웹 서버를 구축할 수 있습니다. DBMS를 이용하여 웹 서버와 연계하여 기본적인 입출력(CRUD)을 구현할 수 있습니다.",
-  },
-  {
-    id: "php",
-    title: "PHP",
-    img: "/php.png",
-    content: "PHP-legacy, PHP(OOP)를 이용하여 웹사이트를 구축할 수 있습니다.",
-  },
-  {
-    id: "graphql",
-    title: "GraphQL",
-    img: "/graphql.png",
-    content: "GraphQL을 이용하여 ORM에 접근하여 DBMS에 원하는 데이터를 입출력할 수 있습니다.",
+    id: "spring",
+    title: "Spring",
+    img: "/spring.png",
+    content: "Spring Framework를 이용하여 CRUD를 이용한 웹 서비스를 구축할 수 있습니다.",
   },
   {
     id: "oracle",
@@ -68,6 +55,19 @@ export const skillsOfBackEnd = [
     img: "/oracle.png",
     content:
       "CRUD 및 PL/SQL(트리거 및 프로시저 등)을 이용하여 JAVA에서 데이터를 입출력할 수 있습니다.",
+  },
+  {
+    id: "mybatis",
+    title: "Mybatis",
+    img: "/mybatis.png",
+    content: "Mybatis ORM을 이용하여 CRUD 작업을 수행할 수 있으며 주요 태그를 숙지하고 있습니다.",
+  },
+  {
+    id: "nodejs",
+    title: "Node.js",
+    img: "/nodejs.png",
+    content:
+      "Express 프레임워크를 이용하여 웹 서버를 구축할 수 있습니다. DBMS를 이용하여 웹 서버와 연계하여 기본적인 입출력(CRUD)을 구현할 수 있습니다.",
   },
   {
     id: "mongobdb",
@@ -80,6 +80,18 @@ export const skillsOfBackEnd = [
     title: "Maria DB",
     img: "/mariadb.png",
     content: "관계데이터베이스의 체계를 이해하고 있으며 CRUD 데이터 처리가 가능합니다.",
+  },
+  {
+    id: "php",
+    title: "PHP",
+    img: "/php.png",
+    content: "PHP-legacy, PHP(OOP)를 이용하여 웹사이트를 구축할 수 있습니다.",
+  },
+  {
+    id: "graphql",
+    title: "GraphQL",
+    img: "/graphql.png",
+    content: "GraphQL을 이용하여 ORM에 접근하여 DBMS에 원하는 데이터를 입출력할 수 있습니다.",
   },
   {
     id: "prisma",
