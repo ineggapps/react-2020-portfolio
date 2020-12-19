@@ -1,6 +1,6 @@
 {
-  "homepage": "https://sannimdev.github.io/react-2020-portfolio",
-  "name": "react-2020-portfolio",
+  "homepage": "https://sannimdev.github.io/portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
