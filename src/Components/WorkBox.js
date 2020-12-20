@@ -6,8 +6,16 @@ import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 import { PAGE_PORTFOLIO } from './Routes';
-import { allSkills } from '../Data/About';
+import about from '../Data/About.json';
 import { getSkillUrl } from '../util';
+
+const { frontend, backend, programming, others } = about;
+const allSkills = {
+    ...frontend,
+    ...backend,
+    ...programming,
+    ...others,
+};
 
 const getSkillImagePath = (id) => {
     let path;

@@ -64,17 +64,18 @@ const SkillBox = styled.div`
 function Skills({ list }) {
     return (
         <SkillsContainer>
-            {list.map((s, idx) => (
-                <Skill key={idx}>
-                    <SkillBox>
-                        <p>
-                            <img src={getSkillUrl(s.img)} alt={s.title} />
-                        </p>
-                        <p>{s.title.toLocaleUpperCase()}</p>
-                        <p className='desc'>{s.content}</p>
-                    </SkillBox>
-                </Skill>
-            ))}
+            {list &&
+                list.map((s, idx) => (
+                    <Skill key={idx}>
+                        <SkillBox>
+                            <p>
+                                <img src={getSkillUrl(s.img)} alt={s.title} />
+                            </p>
+                            <p>{s.title.toLocaleUpperCase()}</p>
+                            <p className='desc'>{s.content}</p>
+                        </SkillBox>
+                    </Skill>
+                ))}
         </SkillsContainer>
     );
 }
