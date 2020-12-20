@@ -23,6 +23,7 @@ const Skill = styled.li`
     &:not(:last-child) {
         margin-bottom: 30px;
     }
+    width: 100%;
     align-self: flex-start;
     justify-self: center;
 `;

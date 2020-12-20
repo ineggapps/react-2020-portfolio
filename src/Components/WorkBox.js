@@ -9,8 +9,8 @@ import { PAGE_PORTFOLIO } from './Routes';
 import about from '../Data/About.json';
 import { getSkillUrl } from '../util';
 
-const { frontend, backend, programming, others } = about;
-const allSkills = [...frontend, ...backend, ...programming, ...others];
+const { frontend, backend, programming, others, hidden } = about;
+const allSkills = [...frontend, ...backend, ...programming, ...others, ...hidden];
 
 const getSkillImagePath = (id) => {
     let path;

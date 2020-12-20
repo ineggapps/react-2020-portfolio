@@ -8,8 +8,8 @@ import { LinkIcon, Disk } from '../Components/Icons.js';
 import { getWorkUrl, getSkillUrl } from '../util';
 import about from '../Data/About.json';
 
-const { frontend, backend, programming, others } = about;
-const allSkills = [...frontend, ...backend, ...programming, ...others];
+const { frontend, backend, programming, others, hidden } = about;
+const allSkills = [...frontend, ...backend, ...programming, ...others, ...hidden];
 const Content = styled.div`
     &.flex-flow-column {
         flex-flow: column;
