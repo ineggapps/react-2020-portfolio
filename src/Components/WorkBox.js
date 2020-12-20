@@ -10,12 +10,7 @@ import about from '../Data/About.json';
 import { getSkillUrl } from '../util';
 
 const { frontend, backend, programming, others } = about;
-const allSkills = {
-    ...frontend,
-    ...backend,
-    ...programming,
-    ...others,
-};
+const allSkills = [...frontend, ...backend, ...programming, ...others];
 
 const getSkillImagePath = (id) => {
     let path;
