@@ -143,16 +143,16 @@ const About = () => {
                 </SkillOverview>
             </Content>
             <Content className='skills'>
+                <h3>Major Programming Languages</h3>
+                <Skills list={programming} />
+            </Content>
+            <Content className='skills'>
                 <h3 className='no-margin-top'>Front-End</h3>
                 <Skills list={frontend} />
             </Content>
             <Content className='skills'>
                 <h3>Back-End</h3>
                 <Skills list={backend} />
-            </Content>
-            <Content className='skills'>
-                <h3>Other Programming Languages</h3>
-                <Skills list={programming} />
             </Content>
             <Content className='skills'>
                 <h3>Others</h3>

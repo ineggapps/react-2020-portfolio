@@ -1,10 +1,30 @@
 {
+    "programming": [
+        {
+            "id": "javascript",
+            "title": "Javascript",
+            "img": "/javascript.png",
+            "content": "'언어'와 '문법'이라는 본질을 이해하면 어떠한 프레임워크도 더 적절히 활용하고 더 빨리 배울 수 있다는 생각으로 비중을 높게 두고 학습하고 있습니다(ES6). 정형화된 객체지향 언어와는 조금 다르게 자유도가 높은 프로토타입 언어라는 차이점을 스스로 깨닫고 있습니다."
+        },
+        {
+            "id": "java",
+            "title": "Java",
+            "img": "/java.png",
+            "content": "객체지향 패러다임을 이해하고 각 역할별로 클래스를 분리할 수 있습니다. 자바 언어 기본 강의뿐 아니라 안드로이드(2013~2015) 등을 배우면서 자바 언어를 통한 프레임워크를 활용하여 해당 언어를 사용하였습니다."
+        }
+    ],
     "frontend": [
         {
             "id": "react",
             "title": "React",
             "img": "/react.png",
-            "content": "React Hooks 기반의 프로젝트에서 웹 서비스를 구축할 수 있습니다. REST API를 이용하여 가져 온 자료를 분석하여 프런트 단 화면을 능동적으로 구성할 수 있습니다."
+            "content": "React Hooks 기반의 프로젝트에서 웹 서비스를 구축할 수 있습니다. React Router를 활용하여 적절하게 페이지를 구성할 수 있습니다. Rest API을 파싱할 수 있습니다. Redux를 학습하고 있습니다."
+        },
+        {
+            "id": "vue",
+            "title": "Vue",
+            "img": "/vue.png",
+            "content": "라이프사이클을 활용할 수 있습니다. Mixin 등 Vue에 특화된 기능을 적절하게 활용할 수 있습니다. Frontend의 양대산맥인 React와 Vue 각각 개발할 때 어떤 차이가 있는지 고민하며 개발하고 있습니다. "
         },
         {
             "id": "html5",
@@ -16,7 +36,7 @@
             "id": "css3",
             "title": "css3",
             "img": "/css3.png",
-            "content": "CSS의 등장 배경에 대해 이해하였고, CSS를 적재 적소에 적용할 수 있습니다. "
+            "content": "웹 표준을 준수하기 시작했을 때부터 CSS를 활용하여 웹페이지를 작성하기 시작했습니다. CSS의 등장 배경에 대해 이해하였고, CSS를 적재 적소에 적용할 수 있습니다."
         },
         {
             "id": "scss",
@@ -25,16 +45,10 @@
             "content": "CSS Preprocessor인 SCSS의 문법을 사용할 수 있습니다. styled-component를 이용하여 React 프로젝트에서 SCSS을 주로 사용하였습니다."
         },
         {
-            "id": "javascript",
-            "title": "Javascript",
-            "img": "/javascript.png",
-            "content": "ES6의 최신 문법을 학습하였습니다. 이 포트폴리오도 React를 바탕으로 한 ES6문법으로 작성되었습니다. 바닐라 스크립트에서 간단한 스크립트를 이용하여 웹사이트를 구성할 수 있습니다."
-        },
-        {
             "id": "jquery",
             "title": "jQuery",
             "img": "/jquery.png",
-            "content": "jQuery를 이용하여 DOM에 접근하고 REST API를 요청하거나 파싱할 수 있습니다."
+            "content": "jQuery를 이용하여 DOM에 접근하고 REST API를 요청하거나 파싱할 수 있습니다. 그러나 React나 Vue를 이용하여 개발하기를 희망합니다."
         }
     ],
     "backend": [
@@ -74,12 +88,7 @@
             "img": "/mariadb.png",
             "content": "관계데이터베이스의 체계를 이해하고 있으며 CRUD 데이터 처리가 가능합니다."
         },
-        {
-            "id": "php",
-            "title": "PHP",
-            "img": "/php.png",
-            "content": "PHP-legacy, PHP(OOP)를 이용하여 웹사이트를 구축할 수 있습니다."
-        },
+
         {
             "id": "graphql",
             "title": "GraphQL",
@@ -91,14 +100,6 @@
             "title": "Prisma ORM",
             "img": "/prisma.png",
             "content": "DBMS의 앞 단에서 기능하는 ORM의 개념의 존재에 대해 숙지하고 있으며, 이를 Prisma를 이용하여 DBMS와 GraphQL의 중간에서 데이터를 입출력하도록 제어할 수 있습니다."
-        }
-    ],
-    "programming": [
-        {
-            "id": "java",
-            "title": "Java",
-            "img": "/java.png",
-            "content": "객체지향 패러다임을 이해하고 각 역할별로 클래스를 분리할 수 있습니다. 저의 자바 선생님은 안드로이드가 8할이라고 할 수 있는 만큼 교육과정을 수강하면서 많은 문법과 디자인 패턴들을 익혔습니다. 또한, Oracle 데이터베이스에 있는 내용을 인출하여 알맞게 입출력할 수 있습니다. "
         }
     ],
     "others": [
@@ -122,6 +123,12 @@
         }
     ],
     "hidden": [
+        {
+            "id": "php",
+            "title": "PHP",
+            "img": "/php.png",
+            "content": "PHP-legacy, PHP(OOP)를 이용하여 웹사이트를 구축할 수 있습니다."
+        },
         {
             "id": "d3js",
             "title": "d3.js",
