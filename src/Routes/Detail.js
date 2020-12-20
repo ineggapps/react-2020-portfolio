@@ -6,8 +6,15 @@ import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import { PAGE_PORTFOLIO } from '../Components/Routes.js';
 import { LinkIcon, Disk } from '../Components/Icons.js';
 import { getWorkUrl, getSkillUrl } from '../util';
-import { allSkills } from '../Data/About.js';
+import about from '../Data/About.json';
 
+const { frontend, backend, programming, others } = about;
+const allSkills = {
+    ...frontend,
+    ...backend,
+    ...programming,
+    ...others,
+};
 const Content = styled.div`
     &.flex-flow-column {
         flex-flow: column;

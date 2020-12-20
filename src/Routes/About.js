@@ -1,17 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import {
-    skillsOfFrontend,
-    skillsOfBackEnd,
-    skillsOfProgramming,
-    skillsOfOthers,
-} from '../Data/About';
+import about from '../Data/About.json';
 import { Button } from 'antd';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import { PAGE_PORTFOLIO } from '../Components/Routes';
 import { Link } from 'react-router-dom';
 import Skills from '../Components/Skills';
+
+const { frontend, backend, programming, others } = about;
 
 const Content = styled.div`
     display: flex;
@@ -148,19 +144,19 @@ const About = () => {
             </Content>
             <Content className='skills'>
                 <h3 className='no-margin-top'>Front-End</h3>
-                <Skills list={skillsOfFrontend} />
+                <Skills list={frontend} />
             </Content>
             <Content className='skills'>
                 <h3>Back-End</h3>
-                <Skills list={skillsOfBackEnd} />
+                <Skills list={backend} />
             </Content>
             <Content className='skills'>
                 <h3>Other Programming Languages</h3>
-                <Skills list={skillsOfProgramming} />
+                <Skills list={programming} />
             </Content>
             <Content className='skills'>
                 <h3>Others</h3>
-                <Skills list={skillsOfOthers} />
+                <Skills list={others} />
             </Content>
         </>
     );
