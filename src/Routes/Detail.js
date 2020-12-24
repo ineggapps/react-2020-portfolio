@@ -165,7 +165,6 @@ const Detail = ({
             });
         });
     }
-    console.log('skills=', skills);
 
     return (
         <>
