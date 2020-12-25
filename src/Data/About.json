@@ -88,18 +88,11 @@
             "img": "/mariadb.png",
             "content": "관계데이터베이스의 체계를 이해하고 있으며 CRUD 데이터 처리가 가능합니다."
         },
-
         {
-            "id": "graphql",
-            "title": "GraphQL",
-            "img": "/graphql.png",
-            "content": "GraphQL을 이용하여 ORM에 접근하여 DBMS에 원하는 데이터를 입출력할 수 있습니다."
-        },
-        {
-            "id": "prisma",
-            "title": "Prisma ORM",
-            "img": "/prisma.png",
-            "content": "DBMS의 앞 단에서 기능하는 ORM의 개념의 존재에 대해 숙지하고 있으며, 이를 Prisma를 이용하여 DBMS와 GraphQL의 중간에서 데이터를 입출력하도록 제어할 수 있습니다."
+            "id": "postgresql",
+            "title": "Postgre SQL",
+            "img": "/postgresql.png",
+            "content": "관계형 데이터베이스임을 이해하고 있고 Oracle이나 MariaDB에서 사용하는 함수를 PostgreSQL의 실정에 맞는 함수를 찾아 쿼리문을 적절하게 작성할 수 있습니다."
         }
     ],
     "others": [
@@ -138,6 +131,18 @@
             "title": "Android",
             "img": "/android.png",
             "content": "안드로이드가 공식 언어로 Kotlin을 추가하기 전에 자바를 이용하여 안드로이드 애플리케이션을 작성하였습니다(2015년 롤리팝 기준)"
+        },
+        {
+            "id": "graphql",
+            "title": "GraphQL",
+            "img": "/graphql.png",
+            "content": "GraphQL을 이용하여 ORM에 접근하여 DBMS에 원하는 데이터를 입출력할 수 있습니다."
+        },
+        {
+            "id": "prisma",
+            "title": "Prisma ORM",
+            "img": "/prisma.png",
+            "content": "DBMS의 앞 단에서 기능하는 ORM의 개념의 존재에 대해 숙지하고 있으며, 이를 Prisma를 이용하여 DBMS와 GraphQL의 중간에서 데이터를 입출력하도록 제어할 수 있습니다."
         }
     ]
 }
